@@ -7,7 +7,7 @@ module.exports = {
       colors: ({ colors }) => ({
         neutral: colors.neutral,
         primary: colors.cyan,
-        secondary: colors.indigo,
+        secondary: colors.sky,
         accent: colors.teal,
         danger: colors.rose,
         warning: colors.amber,
