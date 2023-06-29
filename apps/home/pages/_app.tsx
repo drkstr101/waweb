@@ -4,14 +4,14 @@ import Head from "next/head";
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <article>
       <Head>
         <title>Welcome to home!</title>
       </Head>
-      <main className="app">
+      <main>
         <Component {...pageProps} />
       </main>
-    </>
+    </article>
   );
 }
 
