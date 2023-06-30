@@ -1,12 +1,12 @@
+import { MDXProvider } from "@mdx-js/react";
 import Head from "next/head";
 import { Router, useRouter } from "next/router";
-import { MDXProvider } from "@mdx-js/react";
 
 import { Layout } from "@protocol/components/Layout";
 import * as mdxComponents from "@protocol/components/mdx";
 import { useMobileNavigationStore } from "@protocol/components/MobileNavigation";
 
-import "@protocol/styles/tailwind.css";
+import "@watheia/theme.styles";
 import "focus-visible";
 
 function onRouteChange() {

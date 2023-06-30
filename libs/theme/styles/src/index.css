@@ -4,6 +4,24 @@
 @import "prism.css";
 @import "tailwindcss/utilities";
 
+@layer base {
+  :root {
+    --shiki-color-text: theme("colors.white");
+    --shiki-token-constant: theme("colors.primary.300");
+    --shiki-token-string: theme("colors.primary.300");
+    --shiki-token-comment: theme("colors.neutral.500");
+    --shiki-token-keyword: theme("colors.sky.300");
+    --shiki-token-parameter: theme("colors.pink.300");
+    --shiki-token-function: theme("colors.violet.300");
+    --shiki-token-string-expression: theme("colors.primary.300");
+    --shiki-token-punctuation: theme("colors.neutral.200");
+  }
+
+  [inert] ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 #__next {
   min-height: 100%;
 }
