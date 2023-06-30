@@ -7,6 +7,26 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
+"@algolia/autocomplete-core@^1.9.2":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-core/-/autocomplete-core-1.9.4.tgz#4dfea22c8558c90f4ff107633efb298df382aef3"
+  integrity sha512-sakE1Lks15UXKHkjDyxZ7yT/fGrHrmvlfQ1Fz3m/cqXxBUhBtD5AKuuSpPUW0M/SaTnGSOf/8jJnOcyjznZ1UA==
+  dependencies:
+    "@algolia/autocomplete-plugin-algolia-insights" "1.9.4"
+    "@algolia/autocomplete-shared" "1.9.4"
+
+"@algolia/autocomplete-plugin-algolia-insights@1.9.4":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-plugin-algolia-insights/-/autocomplete-plugin-algolia-insights-1.9.4.tgz#57181d5b88ea750826b74e1f58d17a826c9d12a2"
+  integrity sha512-1ZzFX3wDYWUPPwEWmjEjBlYa4oWaI57ntPIEMVNB+vdPYLy9QCroRsKruCHgmD1+GekAdEj7ayYkDlbB//kdiw==
+  dependencies:
+    "@algolia/autocomplete-shared" "1.9.4"
+
+"@algolia/autocomplete-shared@1.9.4":
+  version "1.9.4"
+  resolved "https://registry.yarnpkg.com/@algolia/autocomplete-shared/-/autocomplete-shared-1.9.4.tgz#7b008675d6fd26e31e35629a78b531faa8cba672"
+  integrity sha512-4iEdI9K2BXEATYeptL2ZVJPNQ5Zd42WTqjnLPsuJCUwPTnrnpHZEJcmUQYktnMnbgvvVzIByRrRJ1NSLQOno3w==
+
 "@ampproject/remapping@^2.2.0":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.2.1.tgz#99e8e11851128b8702cd57c33684f1d0f260b630"
@@ -1598,6 +1618,18 @@
     refractor "^3.4.0"
     unist-util-visit "^2.0.3"
 
+"@markdoc/markdoc@0.1.7":
+  version "0.1.7"
+  resolved "https://registry.yarnpkg.com/@markdoc/markdoc/-/markdoc-0.1.7.tgz#c4a4876ddb4886a45a9d16462277f57fde576f54"
+  integrity sha512-Dz7+VP5I3m/DFpLnzjwvXv64XmneYNzy4adm5uJSkcAJxFlJujIn+hCmMh11k70w+y5Qu18sjngetpuP+3570g==
+
+"@markdoc/next.js@0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@markdoc/next.js/-/next.js-0.1.6.tgz#dee33b28f2f05c0c22a7aeebca7a4ec5685dc7bf"
+  integrity sha512-AkILWoOg3zMrTPDubQgq5lRZ22UuFQsRn/J8oaYUYx/w8RtZ3ZACDNwX9hWVVDT3AcGokNSXaFRsQeWbmpPoFQ==
+  dependencies:
+    js-yaml "^4.1.0"
+
 "@mdx-js/loader@^2.1.5":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@mdx-js/loader/-/loader-2.3.0.tgz#56a6b07eb0027b6407e953a97c52bd8619601161"
@@ -2192,6 +2224,21 @@
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
+
+"@sindresorhus/slugify@^2.1.0":
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/slugify/-/slugify-2.2.1.tgz#fa2e2e25d6e1e74a2eeb5e2c37f5ccc516ed2c4b"
+  integrity sha512-MkngSCRZ8JdSOCHRaYd+D01XhvU3Hjy6MGl06zhOk614hp9EOAp5gIkBeQg7wtmxpitU6eAL4kdiRMcJa2dlrw==
+  dependencies:
+    "@sindresorhus/transliterate" "^1.0.0"
+    escape-string-regexp "^5.0.0"
+
+"@sindresorhus/transliterate@^1.0.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@sindresorhus/transliterate/-/transliterate-1.6.0.tgz#2309fff65a868047e6d2dd70dec747c5b36a8327"
+  integrity sha512-doH1gimEu3A46VX6aVxpHTeHrytJAG6HgdxntYnCFiIFHEM/ZGpG8KiZGBChchjQmG0XFIBL552kBTjVcMZXwQ==
+  dependencies:
+    escape-string-regexp "^5.0.0"
 
 "@sinonjs/commons@^3.0.0":
   version "3.0.0"
@@ -5641,6 +5688,11 @@ flatted@^3.1.0, flatted@^3.2.7:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.7.tgz#609f39207cb614b89d0765b477cb2d437fbf9787"
   integrity sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==
 
+flexsearch@^0.7.31:
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/flexsearch/-/flexsearch-0.7.31.tgz#065d4110b95083110b9b6c762a71a77cc52e4702"
+  integrity sha512-XGozTsMPYkm+6b5QL3Z9wQcJjNYxp0CYn3U1gO7dwD6PAqU1SVWZxI9CCg3z+ml3YfqdPnrBehaBrnH2AGKbNA==
+
 focus-visible@^5.2.0:
   version "5.2.0"
   resolved "https://registry.yarnpkg.com/focus-visible/-/focus-visible-5.2.0.tgz#3a9e41fccf587bd25dcc2ef045508284f0a4d6b3"
@@ -6225,6 +6277,11 @@ he@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
   integrity sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==
+
+highlight-words-core@^1.2.0:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/highlight-words-core/-/highlight-words-core-1.2.2.tgz#1eff6d7d9f0a22f155042a00791237791b1eeaaa"
+  integrity sha512-BXUKIkUuh6cmmxzi5OIbUJxrG8OAk2MqoL1DtO3Wo9D2faJg2ph5ntyuQeLqaHJmzER6H5tllCDA9ZnNe9BVGg==
 
 homedir-polyfill@^1.0.0:
   version "1.0.3"
@@ -8143,6 +8200,11 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
+memoize-one@^4.0.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/memoize-one/-/memoize-one-4.1.0.tgz#a2387c58c03fff27ca390c31b764a79addf3f906"
+  integrity sha512-2GApq0yI/b22J2j9rhbrAlsHb0Qcz+7yWxeLG8h+95sl1XPUgeLimQSOdur4Vw7cUhrBHwaUZxWFZueojqNRzA==
+
 meow@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-9.0.0.tgz#cd9510bc5cac9dee7d03c73ee1f9ad959f4ea364"
@@ -9668,6 +9730,11 @@ pretty-format@^29.0.0, pretty-format@^29.5.0:
     ansi-styles "^5.0.0"
     react-is "^18.0.0"
 
+prism-react-renderer@^1.3.5:
+  version "1.3.5"
+  resolved "https://registry.yarnpkg.com/prism-react-renderer/-/prism-react-renderer-1.3.5.tgz#786bb69aa6f73c32ba1ee813fbe17a0115435085"
+  integrity sha512-IJ+MSwBWKG+SM3b2SUfdrhC+gu01QkV2KmRQgREThBfSQRoufqRfxfHUxpG1WcaFjP+kojcFyO9Qqtpgt3qLCg==
+
 prismjs@~1.27.0:
   version "1.27.0"
   resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.27.0.tgz#bb6ee3138a0b438a3653dd4d6ce0cc6510a45057"
@@ -9688,7 +9755,7 @@ prop-ini@^0.0.2:
   dependencies:
     extend "^3.0.0"
 
-prop-types@^15.8.1:
+prop-types@^15.5.8, prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -9842,6 +9909,15 @@ react-dom@18.2.0:
   dependencies:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
+
+react-highlight-words@^0.20.0:
+  version "0.20.0"
+  resolved "https://registry.yarnpkg.com/react-highlight-words/-/react-highlight-words-0.20.0.tgz#c60bfff5d14678c8f0e8fbe4bdcf083e6c70d507"
+  integrity sha512-asCxy+jCehDVhusNmCBoxDf2mm1AJ//D+EzDx1m5K7EqsMBIHdZ5G4LdwbSEXqZq1Ros0G0UySWmAtntSph7XA==
+  dependencies:
+    highlight-words-core "^1.2.0"
+    memoize-one "^4.0.0"
+    prop-types "^15.5.8"
 
 react-is@^16.13.1:
   version "16.13.1"
@@ -10481,6 +10557,13 @@ simple-concat@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/simple-concat/-/simple-concat-1.0.1.tgz#f46976082ba35c2263f1c8ab5edfe26c41c9552f"
   integrity sha512-cSFtAPtRhljv69IK0hTVZQ+OfE9nePi/rtJmw5UjHeVyVroEqJXP1sFztKUy1qU+xvz3u/sfYJLa947b7nAN2Q==
+
+simple-functional-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/simple-functional-loader/-/simple-functional-loader-1.2.1.tgz#69ff8ab6a9025d8bfe40d92cf13738b8fa2e7296"
+  integrity sha512-GPDrxrQkE7ijm35QlfPFVp5hBHR6ZcaUq42TEDgf1U5iTL3IDLFvKAbHE/ODqpdfJJ7Xn4cr/slBn12jjNPkaQ==
+  dependencies:
+    loader-utils "^2.0.0"
 
 simple-get@^4.0.0, simple-get@^4.0.1:
   version "4.0.1"
