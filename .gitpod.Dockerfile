@@ -20,7 +20,7 @@ RUN sudo apt-get update \
 # Install doctl
 RUN wget https://github.com/digitalocean/doctl/releases/download/v1.94.0/doctl-1.94.0-linux-amd64.tar.gz \
   && tar xf doctl-1.94.0-linux-amd64.tar.gz \
-  && mv doctl /usr/local/bin \
+  && sudo mv doctl /usr/local/bin \
   && rm doctl-1.94.0-linux-amd64.tar.gz
 
 USER gitpod
