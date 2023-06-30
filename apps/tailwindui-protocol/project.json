@@ -24,7 +24,7 @@
       "options": {
         "buildTarget": "tailwindui-protocol:build",
         "dev": true,
-        "port": 4330
+        "port": 4300
       },
       "configurations": {
         "development": {
