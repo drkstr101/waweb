@@ -49,6 +49,24 @@
       "options": {
         "lintFilePatterns": ["apps/tailwindui-protocol/**/*.{ts,tsx,js,jsx}"]
       }
+    },
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": ["build"],
+      "options": {
+        "engine": "docker",
+        "metadata": {
+          "images": ["registry.digitalocean.com/watheia/tailwindui-protocol"],
+          "load": true,
+          "tags": [
+            "type=schedule",
+            "type=ref,event=branch",
+            "type=ref,event=tag",
+            "type=ref,event=pr",
+            "type=sha,prefix=sha-"
+          ]
+        }
+      }
     }
   },
   "tags": []
