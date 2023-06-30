@@ -1,4 +1,4 @@
-import "@salient/styles/tailwind.css";
+import "@watheia/theme.styles";
 import "focus-visible";
 
 export default function App({ Component, pageProps }) {

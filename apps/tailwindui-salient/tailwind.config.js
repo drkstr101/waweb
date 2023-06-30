@@ -11,6 +11,7 @@ module.exports = {
     ),
     ...createGlobPatternsForDependencies(__dirname),
   ],
+  presets: [require("../../tailwind-workspace-preset.js")],
   theme: {
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -31,14 +32,9 @@ module.exports = {
       borderRadius: {
         "4xl": "2rem",
       },
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Lexend", ...defaultTheme.fontFamily.sans],
-      },
       maxWidth: {
         "2xl": "40rem",
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
 };

@@ -1,6 +1,11 @@
-import "@watheia/theme.styles";
 import { AppProps } from "next/app";
 import Head from "next/head";
+
+// theme styles
+import "@watheia/theme.styles";
+
+// local styles
+import './styles.css'
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (

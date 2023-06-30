@@ -20,6 +20,7 @@ module.exports = {
         sans: ["Fira Sans", ...fontFamily.sans],
         mono: ["Fira Mono", ...fontFamily.mono],
         book: ["Fira Sans Book", ...fontFamily.sans],
+        display: ["Fira Sans", ...fontFamily.sans],
       },
     },
     typography: (theme) => ({
@@ -302,5 +303,5 @@ module.exports = {
       },
     }),
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };
