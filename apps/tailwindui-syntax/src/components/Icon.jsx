@@ -19,7 +19,7 @@ const icons = {
 
 const iconStyles = {
   primary:
-    "[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]",
+    "[--icon-foreground:theme(colors.neutral.900)] [--icon-background:theme(colors.white)]",
   amber:
     "[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]",
 };

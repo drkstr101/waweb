@@ -97,7 +97,7 @@ const features = [
 function Feature({ feature, isActive, className, ...props }) {
   return (
     <div className={clsx(className, !isActive && "opacity-75 hover:opacity-100")} {...props}>
-      <div className={clsx("w-9 rounded-lg", isActive ? "bg-primary-600" : "bg-slate-500")}>
+      <div className={clsx("w-9 rounded-lg", isActive ? "bg-primary-600" : "bg-neutral-500")}>
         <svg aria-hidden="true" className="h-9 w-9" fill="none">
           <feature.icon />
         </svg>
@@ -105,13 +105,13 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           "mt-6 text-sm font-medium",
-          isActive ? "text-primary-600" : "text-slate-600"
+          isActive ? "text-primary-600" : "text-neutral-600"
         )}
       >
         {feature.name}
       </h3>
-      <p className="font-display mt-2 text-xl text-slate-900">{feature.summary}</p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="font-display mt-2 text-xl text-neutral-900">{feature.summary}</p>
+      <p className="mt-4 text-sm text-neutral-600">{feature.description}</p>
     </div>
   );
 }
@@ -123,8 +123,8 @@ function FeaturesMobile() {
         <div key={feature.name}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
-            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+            <div className="absolute -inset-x-4 bottom-0 top-8 bg-neutral-200 sm:-inset-x-6" />
+            <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-neutral-900/5 ring-1 ring-neutral-500/10">
               <Image className="w-full" src={feature.image} alt="" sizes="52.75rem" />
             </div>
           </div>
@@ -157,7 +157,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="rounded-4xl relative mt-20 overflow-hidden bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="rounded-4xl relative mt-20 overflow-hidden bg-neutral-200 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -170,13 +170,13 @@ function FeaturesDesktop() {
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                  <div className="w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-neutral-900/5 ring-1 ring-neutral-500/10">
                     <Image className="w-full" src={feature.image} alt="" sizes="52.75rem" />
                   </div>
                 </Tab.Panel>
               ))}
             </div>
-            <div className="rounded-4xl pointer-events-none absolute inset-0 ring-1 ring-inset ring-slate-900/10" />
+            <div className="rounded-4xl pointer-events-none absolute inset-0 ring-1 ring-inset ring-neutral-900/10" />
           </Tab.Panels>
         </>
       )}
@@ -193,10 +193,10 @@ export function SecondaryFeatures() {
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+          <h2 className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl">
             Simplify everyday business tasks.
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-neutral-700">
             Because you’d probably be a little confused if we suggested you complicate your
             everyday business tasks instead.
           </p>

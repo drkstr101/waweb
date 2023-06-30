@@ -4,14 +4,14 @@ import { Icon } from "@syntax/components/Icon";
 
 const styles = {
   note: {
-    container: "bg-primary-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10",
+    container: "bg-primary-50 dark:bg-neutral-800/60 dark:ring-1 dark:ring-neutral-300/10",
     title: "text-primary-900 dark:text-primary-400",
-    body: "text-primary-800 [--tw-prose-background:theme(colors.primary.50)] prose-a:text-primary-900 prose-code:text-primary-900 dark:text-slate-300 dark:prose-code:text-slate-300",
+    body: "text-primary-800 [--tw-prose-background:theme(colors.primary.50)] prose-a:text-primary-900 prose-code:text-primary-900 dark:text-neutral-300 dark:prose-code:text-neutral-300",
   },
   warning: {
-    container: "bg-amber-50 dark:bg-slate-800/60 dark:ring-1 dark:ring-slate-300/10",
+    container: "bg-amber-50 dark:bg-neutral-800/60 dark:ring-1 dark:ring-neutral-300/10",
     title: "text-amber-900 dark:text-amber-500",
-    body: "text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900 dark:text-slate-300 dark:[--tw-prose-underline:theme(colors.primary.700)] dark:prose-code:text-slate-300",
+    body: "text-amber-800 [--tw-prose-underline:theme(colors.amber.400)] [--tw-prose-background:theme(colors.amber.50)] prose-a:text-amber-900 prose-code:text-amber-900 dark:text-neutral-300 dark:[--tw-prose-underline:theme(colors.primary.700)] dark:prose-code:text-neutral-300",
   },
 };
 

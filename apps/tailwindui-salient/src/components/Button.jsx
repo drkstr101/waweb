@@ -10,22 +10,22 @@ const baseStyles = {
 
 const variantStyles = {
   solid: {
-    slate:
-      "bg-slate-900 text-white hover:bg-slate-700 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900",
+    neutral:
+      "bg-neutral-900 text-white hover:bg-neutral-700 hover:text-neutral-100 active:bg-neutral-800 active:text-neutral-300 focus-visible:outline-neutral-900",
     primary:
-      "bg-primary-600 text-white hover:text-slate-100 hover:bg-primary-500 active:bg-primary-800 active:text-primary-100 focus-visible:outline-primary-600",
+      "bg-primary-600 text-white hover:text-neutral-100 hover:bg-primary-500 active:bg-primary-800 active:text-primary-100 focus-visible:outline-primary-600",
     white:
-      "bg-white text-slate-900 hover:bg-primary-50 active:bg-primary-200 active:text-slate-600 focus-visible:outline-white",
+      "bg-white text-neutral-900 hover:bg-primary-50 active:bg-primary-200 active:text-neutral-600 focus-visible:outline-white",
   },
   outline: {
-    slate:
-      "ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-300 active:bg-slate-100 active:text-slate-600 focus-visible:outline-primary-600 focus-visible:ring-slate-300",
+    neutral:
+      "ring-neutral-200 text-neutral-700 hover:text-neutral-900 hover:ring-neutral-300 active:bg-neutral-100 active:text-neutral-600 focus-visible:outline-primary-600 focus-visible:ring-neutral-300",
     white:
-      "ring-slate-700 text-white hover:ring-slate-500 active:ring-slate-700 active:text-slate-400 focus-visible:outline-white",
+      "ring-neutral-700 text-white hover:ring-neutral-500 active:ring-neutral-700 active:text-neutral-400 focus-visible:outline-white",
   },
 };
 
-export function Button({ variant = "solid", color = "slate", className, href, ...props }) {
+export function Button({ variant = "solid", color = "neutral", className, href, ...props }) {
   className = clsx(baseStyles[variant], variantStyles[variant][color], className);
 
   return href ? (

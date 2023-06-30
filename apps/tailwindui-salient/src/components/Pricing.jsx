@@ -52,7 +52,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
       )}
     >
       <h3 className="font-display mt-5 text-lg text-white">{name}</h3>
-      <p className={clsx("mt-2 text-base", featured ? "text-white" : "text-slate-400")}>
+      <p className={clsx("mt-2 text-base", featured ? "text-white" : "text-neutral-400")}>
         {description}
       </p>
       <p className="font-display order-first text-5xl font-light tracking-tight text-white">
@@ -62,12 +62,12 @@ function Plan({ name, price, description, href, features, featured = false }) {
         role="list"
         className={clsx(
           "order-last mt-10 flex flex-col gap-y-3 text-sm",
-          featured ? "text-white" : "text-slate-200"
+          featured ? "text-white" : "text-neutral-200"
         )}
       >
         {features.map((feature) => (
           <li key={feature} className="flex">
-            <CheckIcon className={featured ? "text-white" : "text-slate-400"} />
+            <CheckIcon className={featured ? "text-white" : "text-neutral-400"} />
             <span className="ml-4">{feature}</span>
           </li>
         ))}
@@ -87,7 +87,7 @@ function Plan({ name, price, description, href, features, featured = false }) {
 
 export function Pricing() {
   return (
-    <section id="pricing" aria-label="Pricing" className="bg-slate-900 py-20 sm:py-32">
+    <section id="pricing" aria-label="Pricing" className="bg-neutral-900 py-20 sm:py-32">
       <Container>
         <div className="md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
@@ -97,7 +97,7 @@ export function Pricing() {
             </span>{" "}
             for everyone.
           </h2>
-          <p className="mt-4 text-lg text-slate-400">
+          <p className="mt-4 text-lg text-neutral-400">
             It doesn’t matter what size your business is, our software won’t work well for you.
           </p>
         </div>

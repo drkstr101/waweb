@@ -34,7 +34,7 @@ function TrafficLightsIcon(props) {
 
 export function Hero() {
   return (
-    <div className="overflow-hidden bg-slate-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
+    <div className="overflow-hidden bg-neutral-900 dark:-mb-32 dark:mt-[-4.5rem] dark:pb-32 dark:pt-[4.5rem] dark:lg:mt-[-4.75rem] dark:lg:pt-[4.75rem]">
       <div className="py-16 sm:px-2 lg:relative lg:px-0 lg:py-20">
         <div className="lg:max-w-8xl mx-auto grid max-w-2xl grid-cols-1 items-center gap-x-8 gap-y-16 px-4 lg:grid-cols-2 lg:px-8 xl:gap-x-16 xl:px-12">
           <div className="relative z-10 md:text-center lg:text-left">
@@ -51,7 +51,7 @@ export function Hero() {
               <p className="font-display via-primary-400 inline bg-gradient-to-r from-indigo-200 to-indigo-200 bg-clip-text text-5xl tracking-tight text-transparent">
                 Never miss the cache again.
               </p>
-              <p className="mt-3 text-2xl tracking-tight text-slate-400">
+              <p className="mt-3 text-2xl tracking-tight text-neutral-400">
                 Cache every single thing your app could ever do ahead of time, so your code
                 never even has to run at all.
               </p>
@@ -92,7 +92,7 @@ export function Hero() {
                 <div className="from-primary-300/0 via-primary-300/70 to-primary-300/0 absolute -top-px left-20 right-11 h-px bg-gradient-to-r" />
                 <div className="from-primary-400/0 via-primary-400 to-primary-400/0 absolute -bottom-px left-11 right-20 h-px bg-gradient-to-r" />
                 <div className="pl-4 pt-4">
-                  <TrafficLightsIcon className="h-2.5 w-auto stroke-slate-500/30" />
+                  <TrafficLightsIcon className="h-2.5 w-auto stroke-neutral-500/30" />
                   <div className="mt-4 flex space-x-2 text-xs">
                     {tabs.map((tab) => (
                       <div
@@ -101,13 +101,13 @@ export function Hero() {
                           "flex h-6 rounded-full",
                           tab.isActive
                             ? "from-primary-400/30 via-primary-400 to-primary-400/30 text-primary-300 bg-gradient-to-r p-px font-medium"
-                            : "text-slate-500"
+                            : "text-neutral-500"
                         )}
                       >
                         <div
                           className={clsx(
                             "flex items-center rounded-full px-2.5",
-                            tab.isActive && "bg-slate-800"
+                            tab.isActive && "bg-neutral-800"
                           )}
                         >
                           {tab.name}
@@ -118,7 +118,7 @@ export function Hero() {
                   <div className="mt-6 flex items-start px-1 text-sm">
                     <div
                       aria-hidden="true"
-                      className="select-none border-r border-slate-300/5 pr-4 font-mono text-slate-600"
+                      className="select-none border-r border-neutral-300/5 pr-4 font-mono text-neutral-600"
                     >
                       {Array.from({
                         length: code.split("\n").length,

@@ -18,8 +18,8 @@ export default function Register() {
             <Logo className="h-10 w-auto" />
           </Link>
           <div className="mt-20">
-            <h2 className="text-lg font-semibold text-gray-900">Get started for free</h2>
-            <p className="mt-2 text-sm text-gray-700">
+            <h2 className="text-lg font-semibold text-neutral-900">Get started for free</h2>
+            <p className="mt-2 text-sm text-neutral-700">
               Already registered?{" "}
               <Link href="/login" className="text-primary-600 font-medium hover:underline">
                 Sign in

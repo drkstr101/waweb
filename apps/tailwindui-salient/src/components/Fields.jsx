@@ -1,11 +1,11 @@
 import clsx from "clsx";
 
 const formClasses =
-  "block w-full appearance-none rounded-md border border-gray-200 bg-gray-50 px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-primary-500 focus:bg-white focus:outline-none focus:ring-primary-500 sm:text-sm";
+  "block w-full appearance-none rounded-md border border-neutral-200 bg-neutral-50 px-3 py-2 text-neutral-900 placeholder-neutral-400 focus:border-primary-500 focus:bg-white focus:outline-none focus:ring-primary-500 sm:text-sm";
 
 function Label({ id, children }) {
   return (
-    <label htmlFor={id} className="mb-3 block text-sm font-medium text-gray-700">
+    <label htmlFor={id} className="mb-3 block text-sm font-medium text-neutral-700">
       {children}
     </label>
   );

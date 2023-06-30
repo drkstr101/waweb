@@ -25,7 +25,7 @@ function FeedbackButton(props) {
   return (
     <button
       type="submit"
-      className="hover:bg-zinc-900/2.5 px-3 text-sm font-medium text-zinc-600 transition hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-white/5 dark:hover:text-white"
+      className="hover:bg-neutral-900/2.5 px-3 text-sm font-medium text-neutral-600 transition hover:text-neutral-900 dark:text-neutral-400 dark:hover:bg-white/5 dark:hover:text-white"
       {...props}
     />
   );
@@ -38,10 +38,10 @@ const FeedbackForm = forwardRef(function FeedbackForm({ onSubmit }, ref) {
       onSubmit={onSubmit}
       className="absolute inset-0 flex items-center justify-center gap-6 md:justify-start"
     >
-      <p className="text-sm text-zinc-600 dark:text-zinc-400">Was this page helpful?</p>
-      <div className="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-zinc-900/10 dark:border-white/10">
+      <p className="text-sm text-neutral-600 dark:text-neutral-400">Was this page helpful?</p>
+      <div className="group grid h-8 grid-cols-[1fr,1px,1fr] overflow-hidden rounded-full border border-neutral-900/10 dark:border-white/10">
         <FeedbackButton data-response="yes">Yes</FeedbackButton>
-        <div className="bg-zinc-900/10 dark:bg-white/10" />
+        <div className="bg-neutral-900/10 dark:bg-white/10" />
         <FeedbackButton data-response="no">No</FeedbackButton>
       </div>
     </form>
@@ -110,7 +110,7 @@ function PageLink({ label, page, previous = false }) {
         href={page.href}
         tabIndex={-1}
         aria-hidden="true"
-        className="text-base font-semibold text-zinc-900 transition hover:text-zinc-600 dark:text-white dark:hover:text-zinc-300"
+        className="text-base font-semibold text-neutral-900 transition hover:text-neutral-600 dark:text-white dark:hover:text-neutral-300"
       >
         {page.title}
       </Link>
@@ -182,15 +182,15 @@ function SocialLink({ href, icon: Icon, children }) {
   return (
     <Link href={href} className="group">
       <span className="sr-only">{children}</span>
-      <Icon className="h-5 w-5 fill-zinc-700 transition group-hover:fill-zinc-900 dark:group-hover:fill-zinc-500" />
+      <Icon className="h-5 w-5 fill-neutral-700 transition group-hover:fill-neutral-900 dark:group-hover:fill-neutral-500" />
     </Link>
   );
 }
 
 function SmallPrint() {
   return (
-    <div className="flex flex-col items-center justify-between gap-5 border-t border-zinc-900/5 pt-8 dark:border-white/5 sm:flex-row">
-      <p className="text-xs text-zinc-600 dark:text-zinc-400">
+    <div className="flex flex-col items-center justify-between gap-5 border-t border-neutral-900/5 pt-8 dark:border-white/5 sm:flex-row">
+      <p className="text-xs text-neutral-600 dark:text-neutral-400">
         &copy; Copyright {new Date().getFullYear()}. All rights reserved.
       </p>
       <div className="flex gap-4">
