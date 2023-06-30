@@ -1,44 +1,47 @@
 import { createLoader } from "simple-functional-loader";
 import glob from "fast-glob";
+import { remark } from "remark";
+import remarkMdx from "remark-mdx";
 import * as url from "url";
 import * as path from "path";
 import * as fs from "fs";
+import { visit, SKIP } from "unist-util-visit";
 import { slugifyWithCounter } from "@sindresorhus/slugify";
-import Markdoc from "@markdoc/markdoc";
+import { toString } from "mdast-util-to-string";
+import { filter } from "unist-util-filter";
 
 const __filename = url.fileURLToPath(import.meta.url);
+const processor = remark().use(remarkMdx).use(extractSections);
 const slugify = slugifyWithCounter();
 
-function toString(node) {
-  let str =
-    node.type === "text" && typeof node.attributes?.content === "string"
-      ? node.attributes.content
-      : "";
-  if ("children" in node) {
-    for (let child of node.children) {
-      str += toString(child);
-    }
-  }
-  return str;
+function isObjectExpression(node) {
+  return (
+    node.type === "mdxTextExpression" &&
+    node.data?.estree?.body?.[0]?.expression?.type === "ObjectExpression"
+  );
 }
 
-function extractSections(node, sections, isRoot = true) {
-  if (isRoot) {
+function excludeObjectExpressions(tree) {
+  return filter(tree, (node) => !isObjectExpression(node));
+}
+
+function extractSections() {
+  return (tree, { sections }) => {
     slugify.reset();
-  }
-  if (node.type === "heading" || node.type === "paragraph") {
-    let content = toString(node).trim();
-    if (node.type === "heading" && node.attributes.level <= 2) {
-      let hash = node.attributes?.id ?? slugify(content);
-      sections.push([content, hash, []]);
-    } else {
-      sections.at(-1)[2].push(content);
-    }
-  } else if ("children" in node) {
-    for (let child of node.children) {
-      extractSections(child, sections, false);
-    }
-  }
+
+    visit(tree, (node) => {
+      if (node.type === "heading" || node.type === "paragraph") {
+        let content = toString(excludeObjectExpressions(node));
+        if (node.type === "heading" && node.depth <= 2) {
+          let hash = node.depth === 1 ? null : slugify(content);
+          sections.push([content, hash, []]);
+        } else {
+          sections.at(-1)?.[2].push(content);
+        }
+        return SKIP;
+      }
+    });
+  };
 }
 
 export default function search(nextConfig = {}) {
@@ -53,21 +56,19 @@ export default function search(nextConfig = {}) {
             let pagesDir = path.resolve("./src/pages");
             this.addContextDependency(pagesDir);
 
-            let files = glob.sync("**/*.md", { cwd: pagesDir });
+            let files = glob.sync("**/*.mdx", { cwd: pagesDir });
             let data = files.map((file) => {
-              let url = file === "index.md" ? "/" : `/${file.replace(/\.md$/, "")}`;
-              let md = fs.readFileSync(path.join(pagesDir, file), "utf8");
+              let url = file === "index.mdx" ? "/" : `/${file.replace(/\.mdx$/, "")}`;
+              let mdx = fs.readFileSync(path.join(pagesDir, file), "utf8");
 
-              let sections;
+              let sections = [];
 
-              if (cache.get(file)?.[0] === md) {
+              if (cache.get(file)?.[0] === mdx) {
                 sections = cache.get(file)[1];
               } else {
-                let ast = Markdoc.parse(md);
-                let title = ast.attributes?.frontmatter?.match(/^title:\s*(.*?)\s*$/m)?.[1];
-                sections = [[title, null, []]];
-                extractSections(ast, sections);
-                cache.set(file, [md, sections]);
+                let vfile = { value: mdx, sections };
+                processor.runSync(processor.parse(vfile), vfile);
+                cache.set(file, [mdx, sections]);
               }
 
               return { url, sections };

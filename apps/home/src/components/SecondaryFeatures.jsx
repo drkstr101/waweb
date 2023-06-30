@@ -3,10 +3,10 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useId } from "react";
 
-import { Container } from "@salient/components/Container";
-import screenshotContacts from "@salient/images/screenshots/contacts.png";
-import screenshotInventory from "@salient/images/screenshots/inventory.png";
-import screenshotProfitLoss from "@salient/images/screenshots/profit-loss.png";
+import { Container } from "@home/components/Container";
+import screenshotContacts from "@home/images/screenshots/contacts.png";
+import screenshotInventory from "@home/images/screenshots/inventory.png";
+import screenshotProfitLoss from "@home/images/screenshots/profit-loss.png";
 
 const features = [
   {

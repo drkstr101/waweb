@@ -3,10 +3,10 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Fragment } from "react";
 
-import { Button } from "@salient/components/Button";
-import { Container } from "@salient/components/Container";
-import { Logo } from "@salient/components/Logo";
-import { NavLink } from "@salient/components/NavLink";
+import { Button } from "@home/components/Button";
+import { Container } from "@home/components/Container";
+import { Logo } from "@home/components/Logo";
+import { NavLink } from "@home/components/NavLink";
 
 function MobileNavLink({ href, children }) {
   return (
@@ -71,7 +71,7 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-neutral-900 shadow-xl ring-1 ring-neutral-900/5"
           >
-            <MobileNavLink href="#features">Features</MobileNavLink>
+            <MobileNavLink href="#about">About</MobileNavLink>
             <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
             <MobileNavLink href="#pricing">Pricing</MobileNavLink>
             <hr className="m-2 border-neutral-300/40" />
@@ -93,7 +93,7 @@ export function Header() {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#features">Features</NavLink>
+              <NavLink href="#about">About</NavLink>
               <NavLink href="#testimonials">Testimonials</NavLink>
               <NavLink href="#pricing">Pricing</NavLink>
             </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Container } from "@salient/components/Container";
-import backgroundImage from "@salient/images/background-faqs.jpg";
+import { Container } from "@home/components/Container";
+import backgroundImage from "@home/images/background-faqs.jpg";
 
 const faqs = [
   [
@@ -23,7 +23,7 @@ const faqs = [
     {
       question: "What was that testimonial about tax fraud all about?",
       answer:
-        "TaxPal is just a software application, ultimately your books are your responsibility.",
+        "TaxPal is just a software application, ultimately your site are your responsibility.",
     },
     {
       question: "TaxPal sounds horrible but why do I still feel compelled to purchase?",

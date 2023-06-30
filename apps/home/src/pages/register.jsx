@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import { AuthLayout } from "@salient/components/AuthLayout";
-import { Button } from "@salient/components/Button";
-import { SelectField, TextField } from "@salient/components/Fields";
-import { Logo } from "@salient/components/Logo";
+import { AuthLayout } from "@home/components/AuthLayout";
+import { Button } from "@home/components/Button";
+import { SelectField, TextField } from "@home/components/Fields";
+import { Logo } from "@home/components/Logo";
 
 export default function Register() {
   return (

@@ -1,8 +1,8 @@
 import Image from "next/image";
 
-import { Button } from "@salient/components/Button";
-import { Container } from "@salient/components/Container";
-import backgroundImage from "@salient/images/background-call-to-action.jpg";
+import { Button } from "@home/components/Button";
+import { Container } from "@home/components/Container";
+import backgroundImage from "@home/images/background-call-to-action.jpg";
 
 export function CallToAction() {
   return (
@@ -21,8 +21,8 @@ export function CallToAction() {
             Get started today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
-            It’s time to take control of your books. Buy our software so you can feel like
-            you’re doing something productive.
+            It’s time to take control of your site. Buy our software so you can feel like you’re
+            doing something productive.
           </p>
           <Button href="/register" color="white" className="mt-10">
             Get 6 months free

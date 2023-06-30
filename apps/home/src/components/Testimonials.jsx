@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import { Container } from "@salient/components/Container";
-import avatarImage1 from "@salient/images/avatars/avatar-1.png";
-import avatarImage2 from "@salient/images/avatars/avatar-2.png";
-import avatarImage3 from "@salient/images/avatars/avatar-3.png";
-import avatarImage4 from "@salient/images/avatars/avatar-4.png";
-import avatarImage5 from "@salient/images/avatars/avatar-5.png";
+import { Container } from "@home/components/Container";
+import avatarImage1 from "@home/images/avatars/avatar-1.png";
+import avatarImage2 from "@home/images/avatars/avatar-2.png";
+import avatarImage3 from "@home/images/avatars/avatar-3.png";
+import avatarImage4 from "@home/images/avatars/avatar-4.png";
+import avatarImage5 from "@home/images/avatars/avatar-5.png";
 
 const testimonials = [
   [
@@ -20,7 +20,7 @@ const testimonials = [
     },
     {
       content:
-        "I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my books. Please get back to me right away.",
+        "I’m trying to get a hold of someone in support, I’m in a lot of trouble right now and they are saying it has something to do with my site. Please get back to me right away.",
       author: {
         name: "Amy Hahn",
         role: "Director at Velocity Industries",

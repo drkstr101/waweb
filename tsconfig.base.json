@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@home/*": ["apps/home/src/*"],
       "@protocol/*": ["apps/tailwindui-protocol/src/*"],
-      "@salient/*": ["apps/tailwindui-salient/src/*"],
       "@spotlight/*": ["apps/tailwindui-spotlight/src/*"],
       "@syntax/*": ["apps/tailwindui-syntax/src/*"],
       "@watheia/theme.styles": ["libs/theme/styles/src/index.ts"]

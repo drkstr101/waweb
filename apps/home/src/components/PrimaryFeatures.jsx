@@ -3,12 +3,12 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import { Container } from "@salient/components/Container";
-import backgroundImage from "@salient/images/background-features.jpg";
-import screenshotExpenses from "@salient/images/screenshots/expenses.png";
-import screenshotPayroll from "@salient/images/screenshots/payroll.png";
-import screenshotReporting from "@salient/images/screenshots/reporting.png";
-import screenshotVatReturns from "@salient/images/screenshots/vat-returns.png";
+import { Container } from "@home/components/Container";
+import backgroundImage from "@home/images/background-features.jpg";
+import screenshotExpenses from "@home/images/screenshots/expenses.png";
+import screenshotPayroll from "@home/images/screenshots/payroll.png";
+import screenshotReporting from "@home/images/screenshots/reporting.png";
+import screenshotVatReturns from "@home/images/screenshots/vat-returns.png";
 
 const features = [
   {
@@ -57,8 +57,8 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="features"
-      aria-label="Features for running your books"
+      id="about"
+      aria-label="Features for running your site"
       className="bg-secondary-600 relative overflow-hidden pb-28 pt-20 sm:py-32"
     >
       <Image
@@ -72,7 +72,7 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+            Everything you need to run your site.
           </h2>
           <p className="text-secondary-100 mt-6 text-lg tracking-tight">
             Well everything you need if you aren’t that picky about minor details like tax
