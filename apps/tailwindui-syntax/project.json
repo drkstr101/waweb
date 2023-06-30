@@ -23,7 +23,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "tailwindui-syntax:build",
-        "dev": true
+        "dev": true,
+        "port": 43200
       },
       "configurations": {
         "development": {
