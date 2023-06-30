@@ -5,6 +5,7 @@
     "firsttris.vscode-jest-runner",
     "dbaeumer.vscode-eslint",
     "stylelint.vscode-stylelint",
-    "hbenl.vscode-test-explorer"
+    "hbenl.vscode-test-explorer",
+    "streetsidesoftware.code-spell-checker"
   ]
 }
