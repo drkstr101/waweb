@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Container } from "@/components/Container";
-import backgroundImage from "@/images/background-faqs.jpg";
+import { Container } from "@salient/components/Container";
+import backgroundImage from "@salient/images/background-faqs.jpg";
 
 const faqs = [
   [

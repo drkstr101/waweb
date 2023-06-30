@@ -3,8 +3,8 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Transition } from "@headlessui/react";
 
-import { Button } from "@/components/Button";
-import { navigation } from "@/components/Navigation";
+import { Button } from "@protocol/components/Button";
+import { navigation } from "@protocol/components/Navigation";
 
 function CheckIcon(props) {
   return (

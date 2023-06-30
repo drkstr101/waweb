@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Link from "next/link";
 
-import { AuthLayout } from "@/components/AuthLayout";
-import { Button } from "@/components/Button";
-import { TextField } from "@/components/Fields";
-import { Logo } from "@/components/Logo";
+import { AuthLayout } from "@salient/components/AuthLayout";
+import { Button } from "@salient/components/Button";
+import { TextField } from "@salient/components/Fields";
+import { Logo } from "@salient/components/Logo";
 
 export default function Login() {
   return (

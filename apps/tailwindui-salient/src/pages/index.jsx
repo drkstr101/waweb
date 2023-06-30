@@ -1,14 +1,14 @@
 import Head from "next/head";
 
-import { CallToAction } from "@/components/CallToAction";
-import { Faqs } from "@/components/Faqs";
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { Pricing } from "@/components/Pricing";
-import { PrimaryFeatures } from "@/components/PrimaryFeatures";
-import { SecondaryFeatures } from "@/components/SecondaryFeatures";
-import { Testimonials } from "@/components/Testimonials";
+import { CallToAction } from "@salient/components/CallToAction";
+import { Faqs } from "@salient/components/Faqs";
+import { Footer } from "@salient/components/Footer";
+import { Header } from "@salient/components/Header";
+import { Hero } from "@salient/components/Hero";
+import { Pricing } from "@salient/components/Pricing";
+import { PrimaryFeatures } from "@salient/components/PrimaryFeatures";
+import { SecondaryFeatures } from "@salient/components/SecondaryFeatures";
+import { Testimonials } from "@salient/components/Testimonials";
 
 export default function Home() {
   return (

@@ -1,10 +1,10 @@
-import { useEffect, useId, useState, forwardRef, useRef, Fragment } from "react";
-import { useRouter } from "next/router";
 import { createAutocomplete } from "@algolia/autocomplete-core";
 import { Dialog } from "@headlessui/react";
+import { navigation } from "@syntax/components/Layout";
 import clsx from "clsx";
+import { useRouter } from "next/router";
+import { Fragment, forwardRef, useEffect, useId, useRef, useState } from "react";
 import Highlighter from "react-highlight-words";
-import { navigation } from "@/components/Layout";
 
 function SearchIcon(props) {
   return (
@@ -31,7 +31,7 @@ function useAutocomplete() {
         return state.query !== "";
       },
       getSources({ query }) {
-        return import("@/markdoc/search.mjs").then(({ search }) => {
+        return import("@syntax/markdoc/search.mjs").then(({ search }) => {
           return [
             {
               sourceId: "documentation",

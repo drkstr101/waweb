@@ -1,10 +1,10 @@
-import Head from "next/head";
 import { slugifyWithCounter } from "@sindresorhus/slugify";
+import Head from "next/head";
 
-import { Layout } from "@/components/Layout";
+import { Layout } from "@syntax/components/Layout";
 
+import "@syntax/styles/tailwind.css";
 import "focus-visible";
-import "@/styles/tailwind.css";
 
 function getNodeText(node) {
   let text = "";

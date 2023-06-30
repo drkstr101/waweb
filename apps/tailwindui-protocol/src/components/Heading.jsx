@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useInView } from "framer-motion";
 
-import { useSectionStore } from "@/components/SectionProvider";
-import { Tag } from "@/components/Tag";
-import { remToPx } from "@/lib/remToPx";
+import { useSectionStore } from "@protocol/components/SectionProvider";
+import { Tag } from "@protocol/components/Tag";
+import { remToPx } from "@protocol/lib/remToPx";
 
 function AnchorIcon(props) {
   return (

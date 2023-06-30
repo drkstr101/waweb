@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
-import { Logo } from "@/components/Logo";
-import { Navigation } from "@/components/Navigation";
-import { Prose } from "@/components/Prose";
-import { SectionProvider } from "@/components/SectionProvider";
+import { Footer } from "@protocol/components/Footer";
+import { Header } from "@protocol/components/Header";
+import { Logo } from "@protocol/components/Logo";
+import { Navigation } from "@protocol/components/Navigation";
+import { Prose } from "@protocol/components/Prose";
+import { SectionProvider } from "@protocol/components/SectionProvider";
 
 export function Layout({ children, sections = [] }) {
   return (

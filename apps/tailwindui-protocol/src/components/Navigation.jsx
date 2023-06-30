@@ -4,11 +4,11 @@ import { useRouter } from "next/router";
 import clsx from "clsx";
 import { AnimatePresence, motion, useIsPresent } from "framer-motion";
 
-import { Button } from "@/components/Button";
-import { useIsInsideMobileNavigation } from "@/components/MobileNavigation";
-import { useSectionStore } from "@/components/SectionProvider";
-import { Tag } from "@/components/Tag";
-import { remToPx } from "@/lib/remToPx";
+import { Button } from "@protocol/components/Button";
+import { useIsInsideMobileNavigation } from "@protocol/components/MobileNavigation";
+import { useSectionStore } from "@protocol/components/SectionProvider";
+import { Tag } from "@protocol/components/Tag";
+import { remToPx } from "@protocol/lib/remToPx";
 
 function useInitialValue(value, condition = true) {
   let initialValue = useRef(value).current;

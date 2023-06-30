@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import { Container } from "@/components/Container";
-import { Logo } from "@/components/Logo";
-import { NavLink } from "@/components/NavLink";
+import { Container } from "@salient/components/Container";
+import { Logo } from "@salient/components/Logo";
+import { NavLink } from "@salient/components/NavLink";
 
 export function Footer() {
   return (

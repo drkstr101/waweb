@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import { Button } from "@/components/Button";
-import { Heading } from "@/components/Heading";
-import logoGo from "@/images/logos/go.svg";
-import logoNode from "@/images/logos/node.svg";
-import logoPhp from "@/images/logos/php.svg";
-import logoPython from "@/images/logos/python.svg";
-import logoRuby from "@/images/logos/ruby.svg";
+import { Button } from "@protocol/components/Button";
+import { Heading } from "@protocol/components/Heading";
+import logoGo from "@protocol/images/logos/go.svg";
+import logoNode from "@protocol/images/logos/node.svg";
+import logoPhp from "@protocol/images/logos/php.svg";
+import logoPython from "@protocol/images/logos/python.svg";
+import logoRuby from "@protocol/images/logos/ruby.svg";
 
 const libraries = [
   {

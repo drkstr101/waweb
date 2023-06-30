@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import { createAutocomplete } from "@algolia/autocomplete-core";
 import { Dialog, Transition } from "@headlessui/react";
 import clsx from "clsx";
-import { navigation } from "@/components/Navigation";
+import { navigation } from "@protocol/components/Navigation";
 import Highlighter from "react-highlight-words";
 
 function useAutocomplete() {
@@ -23,7 +23,7 @@ function useAutocomplete() {
         return state.query !== "";
       },
       getSources({ query }) {
-        return import("@/mdx/search.mjs").then(({ search }) => {
+        return import("@protocol/mdx/search.mjs").then(({ search }) => {
           return [
             {
               sourceId: "documentation",

@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useLayoutEffect, useState } from "react";
 import { createStore, useStore } from "zustand";
 
-import { remToPx } from "@/lib/remToPx";
+import { remToPx } from "@protocol/lib/remToPx";
 
 function createSectionStore(sections) {
   return createStore((set) => ({

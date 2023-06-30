@@ -1,12 +1,12 @@
-import { Fragment } from "react";
-import Image from "next/image";
 import clsx from "clsx";
+import Image from "next/image";
 import Highlight, { defaultProps } from "prism-react-renderer";
+import { Fragment } from "react";
 
-import { Button } from "@/components/Button";
-import { HeroBackground } from "@/components/HeroBackground";
-import blurCyanImage from "@/images/blur-cyan.png";
-import blurIndigoImage from "@/images/blur-indigo.png";
+import { Button } from "@syntax/components/Button";
+import { HeroBackground } from "@syntax/components/HeroBackground";
+import blurCyanImage from "@syntax/images/blur-cyan.png";
+import blurIndigoImage from "@syntax/images/blur-indigo.png";
 
 const codeLanguage = "javascript";
 const code = `export default {

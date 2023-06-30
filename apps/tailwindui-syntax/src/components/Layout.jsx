@@ -1,15 +1,15 @@
-import { useCallback, useEffect, useState } from "react";
+import clsx from "clsx";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import clsx from "clsx";
+import { useCallback, useEffect, useState } from "react";
 
-import { Hero } from "@/components/Hero";
-import { Logo, Logomark } from "@/components/Logo";
-import { MobileNavigation } from "@/components/MobileNavigation";
-import { Navigation } from "@/components/Navigation";
-import { Prose } from "@/components/Prose";
-import { Search } from "@/components/Search";
-import { ThemeSelector } from "@/components/ThemeSelector";
+import { Hero } from "@syntax/components/Hero";
+import { Logo, Logomark } from "@syntax/components/Logo";
+import { MobileNavigation } from "@syntax/components/MobileNavigation";
+import { Navigation } from "@syntax/components/Navigation";
+import { Prose } from "@syntax/components/Prose";
+import { Search } from "@syntax/components/Search";
+import { ThemeSelector } from "@syntax/components/ThemeSelector";
 
 export const navigation = [
   {
