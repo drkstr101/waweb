@@ -10,7 +10,8 @@
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
       "rules": {
-        "@next/next/no-html-link-for-pages": ["error", "apps/tailwindui-spotlight/pages"]
+        "@next/next/no-html-link-for-pages": ["error", "apps/tailwindui-spotlight/src"],
+        "@nx/enforce-module-boundaries": 1
       }
     },
     {

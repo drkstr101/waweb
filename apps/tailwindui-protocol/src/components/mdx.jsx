@@ -1,11 +1,11 @@
-import Link from "next/link";
 import clsx from "clsx";
+import Link from "next/link";
 
-import { Heading } from "@/components/Heading";
+import { Heading } from "@protocol/components/Heading";
 
 export const a = Link;
-export { Button } from "@/components/Button";
-export { CodeGroup, Code as code, Pre as pre } from "@/components/Code";
+export { Button } from "@protocol/components/Button";
+export { CodeGroup, Code as code, Pre as pre } from "@protocol/components/Code";
 
 export const h2 = function H2(props) {
   return <Heading level={2} {...props} />;
@@ -29,8 +29,8 @@ function InfoIcon(props) {
 
 export function Note({ children }) {
   return (
-    <div className="my-6 flex gap-2.5 rounded-2xl border border-emerald-500/20 bg-emerald-50/50 p-4 leading-6 text-emerald-900 dark:border-emerald-500/30 dark:bg-emerald-500/5 dark:text-emerald-200 dark:[--tw-prose-links-hover:theme(colors.emerald.300)] dark:[--tw-prose-links:theme(colors.white)]">
-      <InfoIcon className="mt-1 h-4 w-4 flex-none fill-emerald-500 stroke-white dark:fill-emerald-200/20 dark:stroke-emerald-200" />
+    <div className="border-primary-500/20 bg-primary-50/50 text-primary-900 dark:border-primary-500/30 dark:bg-primary-500/5 dark:text-primary-200 my-6 flex gap-2.5 rounded-2xl border p-4 leading-6 dark:[--tw-prose-links-hover:theme(colors.primary.300)] dark:[--tw-prose-links:theme(colors.white)]">
+      <InfoIcon className="fill-primary-500 dark:fill-primary-200/20 dark:stroke-primary-200 mt-1 h-4 w-4 flex-none stroke-white" />
       <div className="[&>:first-child]:mt-0 [&>:last-child]:mb-0">{children}</div>
     </div>
   );
@@ -62,7 +62,7 @@ export function Properties({ children }) {
     <div className="my-6">
       <ul
         role="list"
-        className="m-0 max-w-[calc(theme(maxWidth.lg)-theme(spacing.8))] list-none divide-y divide-zinc-900/5 p-0 dark:divide-white/5"
+        className="m-0 max-w-[calc(theme(maxWidth.lg)-theme(spacing.8))] list-none divide-y divide-neutral-900/5 p-0 dark:divide-white/5"
       >
         {children}
       </ul>
@@ -79,7 +79,7 @@ export function Property({ name, type, children }) {
           <code>{name}</code>
         </dd>
         <dt className="sr-only">Type</dt>
-        <dd className="font-mono text-xs text-zinc-400 dark:text-zinc-500">{type}</dd>
+        <dd className="font-mono text-xs text-neutral-400 dark:text-neutral-500">{type}</dd>
         <dt className="sr-only">Description</dt>
         <dd className="w-full flex-none [&>:first-child]:mt-0 [&>:last-child]:mb-0">
           {children}

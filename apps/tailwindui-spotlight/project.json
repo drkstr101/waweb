@@ -24,7 +24,7 @@
       "options": {
         "buildTarget": "tailwindui-spotlight:build",
         "dev": true,
-        "port": 4300
+        "port": 4320
       },
       "configurations": {
         "development": {
@@ -62,6 +62,24 @@
       "outputs": ["{options.outputFile}"],
       "options": {
         "lintFilePatterns": ["apps/tailwindui-spotlight/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": ["build"],
+      "options": {
+        "engine": "docker",
+        "metadata": {
+          "images": ["registry.digitalocean.com/watheia/tailwindui-spotlight"],
+          "load": true,
+          "tags": [
+            "type=schedule",
+            "type=ref,event=branch",
+            "type=ref,event=tag",
+            "type=ref,event=pr",
+            "type=sha,prefix=sha-"
+          ]
+        }
       }
     }
   },

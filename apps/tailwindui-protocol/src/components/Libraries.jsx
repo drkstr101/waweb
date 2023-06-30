@@ -1,12 +1,12 @@
 import Image from "next/image";
 
-import { Button } from "@/components/Button";
-import { Heading } from "@/components/Heading";
-import logoGo from "@/images/logos/go.svg";
-import logoNode from "@/images/logos/node.svg";
-import logoPhp from "@/images/logos/php.svg";
-import logoPython from "@/images/logos/python.svg";
-import logoRuby from "@/images/logos/ruby.svg";
+import { Button } from "@protocol/components/Button";
+import { Heading } from "@protocol/components/Heading";
+import logoGo from "@protocol/images/logos/go.svg";
+import logoNode from "@protocol/images/logos/node.svg";
+import logoPhp from "@protocol/images/logos/php.svg";
+import logoPython from "@protocol/images/logos/python.svg";
+import logoRuby from "@protocol/images/logos/ruby.svg";
 
 const libraries = [
   {
@@ -51,14 +51,14 @@ export function Libraries() {
       <Heading level={2} id="official-libraries">
         Official libraries
       </Heading>
-      <div className="not-prose mt-4 grid grid-cols-1 gap-x-6 gap-y-10 border-t border-zinc-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:max-w-none xl:grid-cols-3">
+      <div className="not-prose mt-4 grid grid-cols-1 gap-x-6 gap-y-10 border-t border-neutral-900/5 pt-10 dark:border-white/5 sm:grid-cols-2 xl:max-w-none xl:grid-cols-3">
         {libraries.map((library) => (
           <div key={library.name} className="flex flex-row-reverse gap-6">
             <div className="flex-auto">
-              <h3 className="text-sm font-semibold text-zinc-900 dark:text-white">
+              <h3 className="text-sm font-semibold text-neutral-900 dark:text-white">
                 {library.name}
               </h3>
-              <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
                 {library.description}
               </p>
               <p className="mt-4">

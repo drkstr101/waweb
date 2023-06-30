@@ -1,12 +1,12 @@
-import { useId } from "react";
 import clsx from "clsx";
+import { useId } from "react";
 
-import { InstallationIcon } from "@/components/icons/InstallationIcon";
-import { LightbulbIcon } from "@/components/icons/LightbulbIcon";
-import { PluginsIcon } from "@/components/icons/PluginsIcon";
-import { PresetsIcon } from "@/components/icons/PresetsIcon";
-import { ThemingIcon } from "@/components/icons/ThemingIcon";
-import { WarningIcon } from "@/components/icons/WarningIcon";
+import { InstallationIcon } from "@syntax/components/icons/InstallationIcon";
+import { LightbulbIcon } from "@syntax/components/icons/LightbulbIcon";
+import { PluginsIcon } from "@syntax/components/icons/PluginsIcon";
+import { PresetsIcon } from "@syntax/components/icons/PresetsIcon";
+import { ThemingIcon } from "@syntax/components/icons/ThemingIcon";
+import { WarningIcon } from "@syntax/components/icons/WarningIcon";
 
 const icons = {
   installation: InstallationIcon,
@@ -18,12 +18,13 @@ const icons = {
 };
 
 const iconStyles = {
-  blue: "[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]",
+  primary:
+    "[--icon-foreground:theme(colors.neutral.900)] [--icon-background:theme(colors.white)]",
   amber:
     "[--icon-foreground:theme(colors.amber.900)] [--icon-background:theme(colors.amber.100)]",
 };
 
-export function Icon({ color = "blue", icon, className, ...props }) {
+export function Icon({ color = "primary", icon, className, ...props }) {
   let id = useId();
   let IconComponent = icons[icon];
 
@@ -41,7 +42,7 @@ export function Icon({ color = "blue", icon, className, ...props }) {
 }
 
 const gradients = {
-  blue: [
+  primary: [
     { stopColor: "#0EA5E9" },
     { stopColor: "#22D3EE", offset: ".527" },
     { stopColor: "#818CF8", offset: 1 },
@@ -52,7 +53,7 @@ const gradients = {
   ],
 };
 
-export function Gradient({ color = "blue", ...props }) {
+export function Gradient({ color = "primary", ...props }) {
   return (
     <radialGradient cx={0} cy={0} r={1} gradientUnits="userSpaceOnUse" {...props}>
       {gradients[color].map((stop, stopIndex) => (

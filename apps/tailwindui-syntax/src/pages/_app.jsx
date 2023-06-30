@@ -1,10 +1,10 @@
-import Head from "next/head";
 import { slugifyWithCounter } from "@sindresorhus/slugify";
+import Head from "next/head";
 
-import { Layout } from "@/components/Layout";
+import { Layout } from "@syntax/components/Layout";
 
+import "@watheia/theme.styles";
 import "focus-visible";
-import "@/styles/tailwind.css";
 
 function getNodeText(node) {
   let text = "";

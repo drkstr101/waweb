@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
 
-import { Footer } from "@/components/Footer";
-import { Header } from "@/components/Header";
+import { Footer } from "@spotlight/components/Footer";
+import { Header } from "@spotlight/components/Header";
 
-import "@/styles/tailwind.css";
+import "@watheia/theme.styles";
 import "focus-visible";
 
 function usePrevious(value) {
@@ -23,7 +23,7 @@ export default function App({ Component, pageProps, router }) {
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-7xl lg:px-8">
-          <div className="w-full bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20" />
+          <div className="w-full bg-white ring-1 ring-neutral-100 dark:bg-neutral-900 dark:ring-neutral-300/20" />
         </div>
       </div>
       <div className="relative">
