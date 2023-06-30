@@ -5,7 +5,7 @@ import Head from "next/head";
 import "@watheia/theme.styles";
 
 // local styles
-import './styles.css'
+import "./styles.css";
 
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
