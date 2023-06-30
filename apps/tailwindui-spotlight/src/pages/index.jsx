@@ -1,24 +1,29 @@
+import clsx from "clsx";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import clsx from "clsx";
 
-import { Button } from "@/components/Button";
-import { Card } from "@/components/Card";
-import { Container } from "@/components/Container";
-import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "@/components/SocialIcons";
-import logoAirbnb from "@/images/logos/airbnb.svg";
-import logoFacebook from "@/images/logos/facebook.svg";
-import logoPlanetaria from "@/images/logos/planetaria.svg";
-import logoStarbucks from "@/images/logos/starbucks.svg";
-import image1 from "@/images/photos/image-1.jpg";
-import image2 from "@/images/photos/image-2.jpg";
-import image3 from "@/images/photos/image-3.jpg";
-import image4 from "@/images/photos/image-4.jpg";
-import image5 from "@/images/photos/image-5.jpg";
-import { formatDate } from "@/lib/formatDate";
-import { generateRssFeed } from "@/lib/generateRssFeed";
-import { getAllArticles } from "@/lib/getAllArticles";
+import { Button } from "@spotlight/components/Button";
+import { Card } from "@spotlight/components/Card";
+import { Container } from "@spotlight/components/Container";
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from "@spotlight/components/SocialIcons";
+import logoAirbnb from "@spotlight/images/logos/airbnb.svg";
+import logoFacebook from "@spotlight/images/logos/facebook.svg";
+import logoPlanetaria from "@spotlight/images/logos/planetaria.svg";
+import logoStarbucks from "@spotlight/images/logos/starbucks.svg";
+import image1 from "@spotlight/images/photos/image-1.jpg";
+import image2 from "@spotlight/images/photos/image-2.jpg";
+import image3 from "@spotlight/images/photos/image-3.jpg";
+import image4 from "@spotlight/images/photos/image-4.jpg";
+import image5 from "@spotlight/images/photos/image-5.jpg";
+import { formatDate } from "@spotlight/lib/formatDate";
+import { generateRssFeed } from "@spotlight/lib/generateRssFeed";
+import { getAllArticles } from "@spotlight/lib/getAllArticles";
 
 function MailIcon(props) {
   return (

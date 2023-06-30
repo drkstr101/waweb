@@ -1,4 +1,4 @@
-import { Container } from "@/components/Container";
+import { Container } from "@spotlight/components/Container";
 
 export function SimpleLayout({ title, intro, children }) {
   return (

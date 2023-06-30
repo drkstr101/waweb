@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import { Card } from "@/components/Card";
-import { Section } from "@/components/Section";
-import { SimpleLayout } from "@/components/SimpleLayout";
+import { Card } from "@spotlight/components/Card";
+import { Section } from "@spotlight/components/Section";
+import { SimpleLayout } from "@spotlight/components/SimpleLayout";
 
 function SpeakingSection({ children, ...props }) {
   return (

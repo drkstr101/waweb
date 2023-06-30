@@ -1,11 +1,16 @@
+import clsx from "clsx";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import clsx from "clsx";
 
-import { Container } from "@/components/Container";
-import { GitHubIcon, InstagramIcon, LinkedInIcon, TwitterIcon } from "@/components/SocialIcons";
-import portraitImage from "@/images/portrait.jpg";
+import { Container } from "@spotlight/components/Container";
+import {
+  GitHubIcon,
+  InstagramIcon,
+  LinkedInIcon,
+  TwitterIcon,
+} from "@spotlight/components/SocialIcons";
+import portraitImage from "@spotlight/images/portrait.jpg";
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (

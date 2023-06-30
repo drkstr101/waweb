@@ -1,9 +1,9 @@
 import Head from "next/head";
 
-import { Card } from "@/components/Card";
-import { SimpleLayout } from "@/components/SimpleLayout";
-import { formatDate } from "@/lib/formatDate";
-import { getAllArticles } from "@/lib/getAllArticles";
+import { Card } from "@spotlight/components/Card";
+import { SimpleLayout } from "@spotlight/components/SimpleLayout";
+import { formatDate } from "@spotlight/lib/formatDate";
+import { getAllArticles } from "@spotlight/lib/getAllArticles";
 
 function Article({ article }) {
   return (

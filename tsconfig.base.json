@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@spotlight/*": ["apps/tailwindui-spotlight/src/*"],
       "@watheia/theme.styles": ["libs/theme/styles/src/index.ts"]
     }
   },

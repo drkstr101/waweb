@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
 
-import { Card } from "@/components/Card";
-import { SimpleLayout } from "@/components/SimpleLayout";
-import logoAnimaginary from "@/images/logos/animaginary.svg";
-import logoCosmos from "@/images/logos/cosmos.svg";
-import logoHelioStream from "@/images/logos/helio-stream.svg";
-import logoOpenShuttle from "@/images/logos/open-shuttle.svg";
-import logoPlanetaria from "@/images/logos/planetaria.svg";
+import { Card } from "@spotlight/components/Card";
+import { SimpleLayout } from "@spotlight/components/SimpleLayout";
+import logoAnimaginary from "@spotlight/images/logos/animaginary.svg";
+import logoCosmos from "@spotlight/images/logos/cosmos.svg";
+import logoHelioStream from "@spotlight/images/logos/helio-stream.svg";
+import logoOpenShuttle from "@spotlight/images/logos/open-shuttle.svg";
+import logoPlanetaria from "@spotlight/images/logos/planetaria.svg";
 
 const projects = [
   {

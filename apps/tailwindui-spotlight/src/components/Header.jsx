@@ -1,12 +1,12 @@
-import { Fragment, useEffect, useRef } from "react";
+import { Popover, Transition } from "@headlessui/react";
+import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Popover, Transition } from "@headlessui/react";
-import clsx from "clsx";
+import { Fragment, useEffect, useRef } from "react";
 
-import { Container } from "@/components/Container";
-import avatarImage from "@/images/avatar.jpg";
+import { Container } from "@spotlight/components/Container";
+import avatarImage from "@spotlight/images/avatar.jpg";
 
 function CloseIcon(props) {
   return (
