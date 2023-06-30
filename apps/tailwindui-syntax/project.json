@@ -1,0 +1,54 @@
+{
+  "name": "tailwindui-syntax",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/tailwindui-syntax",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nx/next:build",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/tailwindui-syntax"
+      },
+      "configurations": {
+        "development": {
+          "outputPath": "apps/tailwindui-syntax"
+        },
+        "production": {}
+      }
+    },
+    "serve": {
+      "executor": "@nx/next:server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "tailwindui-syntax:build",
+        "dev": true
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "tailwindui-syntax:build:development",
+          "dev": true
+        },
+        "production": {
+          "buildTarget": "tailwindui-syntax:build:production",
+          "dev": false
+        }
+      }
+    },
+    "export": {
+      "executor": "@nx/next:export",
+      "options": {
+        "buildTarget": "tailwindui-syntax:build:production"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/tailwindui-syntax/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}
