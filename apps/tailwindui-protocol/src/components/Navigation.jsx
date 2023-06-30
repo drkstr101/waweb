@@ -1,8 +1,8 @@
-import { useRef } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
 import clsx from "clsx";
 import { AnimatePresence, motion, useIsPresent } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import { useRef } from "react";
 
 import { Button } from "@protocol/components/Button";
 import { useIsInsideMobileNavigation } from "@protocol/components/MobileNavigation";
@@ -89,7 +89,7 @@ function ActivePageMarker({ group, pathname }) {
   return (
     <motion.div
       layout
-      className="absolute left-2 h-6 w-px bg-emerald-500"
+      className="bg-primary-500 absolute left-2 h-6 w-px"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 0.2 } }}
       exit={{ opacity: 0 }}

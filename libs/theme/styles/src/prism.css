@@ -37,7 +37,7 @@ pre[class*="language-"] {
 
 .token.unit,
 .language-css .token.function {
-  color: theme("colors.sky.200");
+  color: theme("colors.secondary.200");
 }
 
 .token.comment,

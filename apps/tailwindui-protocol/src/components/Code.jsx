@@ -1,6 +1,6 @@
-import { Children, createContext, useContext, useEffect, useRef, useState } from "react";
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
+import { Children, createContext, useContext, useEffect, useRef, useState } from "react";
 import { create } from "zustand";
 
 import { Tag } from "@protocol/components/Tag";
@@ -55,7 +55,7 @@ function CopyButton({ code }) {
       className={clsx(
         "group/button text-2xs absolute right-4 top-3.5 overflow-hidden rounded-full py-1 pl-2 pr-3 font-medium opacity-0 backdrop-blur transition focus:opacity-100 group-hover:opacity-100",
         copied
-          ? "bg-emerald-400/10 ring-1 ring-inset ring-emerald-400/20"
+          ? "bg-primary-400/10 ring-primary-400/20 ring-1 ring-inset"
           : "hover:bg-white/7.5 dark:bg-white/2.5 bg-white/5 dark:hover:bg-white/5"
       )}
       onClick={() => {
@@ -77,7 +77,7 @@ function CopyButton({ code }) {
       <span
         aria-hidden={!copied}
         className={clsx(
-          "pointer-events-none absolute inset-0 flex items-center justify-center text-emerald-400 transition duration-300",
+          "text-primary-400 pointer-events-none absolute inset-0 flex items-center justify-center transition duration-300",
           !copied && "translate-y-1.5 opacity-0"
         )}
       >
@@ -136,7 +136,7 @@ function CodeGroupHeader({ title, children, selectedIndex }) {
               className={clsx(
                 "border-b py-3 transition focus:[&:not(:focus-visible)]:outline-none",
                 childIndex === selectedIndex
-                  ? "border-emerald-500 text-emerald-400"
+                  ? "border-primary-500 text-primary-400"
                   : "border-transparent text-zinc-400 hover:text-zinc-300"
               )}
             >
