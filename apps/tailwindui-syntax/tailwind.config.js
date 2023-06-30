@@ -11,7 +11,7 @@ module.exports = {
     ),
     ...createGlobPatternsForDependencies(__dirname),
   ],
-  darkMode: "class",
+  presets: [require("../../tailwind-workspace-preset.js")],
   theme: {
     fontSize: {
       xs: ["0.75rem", { lineHeight: "1rem" }],
@@ -29,14 +29,9 @@ module.exports = {
       "9xl": ["8rem", { lineHeight: "1" }],
     },
     extend: {
-      fontFamily: {
-        sans: ["Inter", ...defaultTheme.fontFamily.sans],
-        display: ["Lexend", ...defaultTheme.fontFamily.sans],
-      },
       maxWidth: {
         "8xl": "88rem",
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
 };
