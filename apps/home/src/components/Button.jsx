@@ -1,6 +1,19 @@
 import clsx from "clsx";
 import Link from "next/link";
 
+function ArrowIcon(props) {
+  return (
+    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" {...props}>
+      <path
+        stroke="currentColor"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
+      />
+    </svg>
+  );
+}
+
 const baseStyles = {
   solid:
     "group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2",
@@ -25,12 +38,44 @@ const variantStyles = {
   },
 };
 
-export function Button({ variant = "solid", color = "neutral", className, href, ...props }) {
+export function Button({
+  variant = "solid",
+  color = "neutral",
+  className,
+  href,
+  arrow,
+  children,
+  ...props
+}) {
+  // runtime check variant for now
+  if (variant !== "solid" && variant !== "outline") {
+    console.warn(`Unknown button variant ${variant} received, defaulting to 'solid'.`);
+    variant = "solid";
+  }
+
+  // merge css styles
   className = clsx(baseStyles[variant], variantStyles[variant][color], className);
 
-  return href ? (
-    <Link href={href} className={className} {...props} />
-  ) : (
-    <button className={className} {...props} />
+  // declare arrow gfx
+  const arrowIcon = (
+    <ArrowIcon
+      className={clsx(
+        "mt-0.5 h-5 w-5",
+        variant === "text" && "relative top-px",
+        arrow === "left" && "-ml-1 rotate-180",
+        arrow === "right" && "-mr-1"
+      )}
+    />
+  );
+
+  // set base component
+  const Component = props.href ? Link : "button";
+
+  return (
+    <Component className={className} {...props}>
+      {arrow === "left" && arrowIcon}
+      {children}
+      {arrow === "right" && arrowIcon}
+    </Component>
   );
 }
