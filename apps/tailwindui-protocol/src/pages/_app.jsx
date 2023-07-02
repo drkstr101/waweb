@@ -6,7 +6,7 @@ import { Layout } from "@protocol/components/Layout";
 import * as mdxComponents from "@protocol/components/mdx";
 import { useMobileNavigationStore } from "@protocol/components/MobileNavigation";
 
-import "@watheia/theme.styles";
+import "@watheia/waweb.theme.styles";
 import "focus-visible";
 
 function onRouteChange() {

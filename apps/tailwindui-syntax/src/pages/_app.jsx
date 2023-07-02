@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { Layout } from "@syntax/components/Layout";
 
-import "@watheia/theme.styles";
+import "@watheia/waweb.theme.styles";
 import "focus-visible";
 
 function getNodeText(node) {

@@ -1,4 +1,4 @@
-import "@watheia/theme.styles";
+import "@watheia/waweb.theme.styles";
 import "focus-visible";
 
 export default function App({ Component, pageProps }) {
