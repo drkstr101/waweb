@@ -81,18 +81,17 @@ function QuoteIcon(props) {
 export function Testimonials() {
   return (
     <section
-      id="testimonials"
+      id="blog"
       aria-label="What our customers are saying"
-      className="bg-neutral-50 py-20 sm:py-32"
+      className="bg-neutral-100 py-20 sm:py-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl">
-            Loved by businesses worldwide.
+            Recent posts
           </h2>
           <p className="mt-4 text-lg tracking-tight text-neutral-700">
-            Our software is so simple that people can’t help but fall in love with it.
-            Simplicity is easy when you just skip tons of mission-critical features.
+            Read our latest musings on engineering, design, business and more.
           </p>
         </div>
         <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-20 lg:max-w-none lg:grid-cols-3">

@@ -5,6 +5,7 @@ import { Faqs } from "@home/components/Faqs";
 import { Footer } from "@home/components/Footer";
 import { Header } from "@home/components/Header";
 import { Hero } from "@home/components/Hero";
+import { Highlights } from "@home/components/Highlights";
 import { Pricing } from "@home/components/Pricing";
 import { PrimaryFeatures } from "@home/components/PrimaryFeatures";
 import { SecondaryFeatures } from "@home/components/SecondaryFeatures";
@@ -23,6 +24,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Highlights />
         <PrimaryFeatures />
         <SecondaryFeatures />
         <CallToAction />

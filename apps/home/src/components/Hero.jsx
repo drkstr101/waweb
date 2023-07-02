@@ -10,7 +10,7 @@ import { Button, Container } from "@watheia/waweb.base-ui";
 
 export function Hero() {
   return (
-    <Container className="pb-16 pt-20 text-center lg:pt-32">
+    <Container className="pb-16 min-h-screen pt-20 text-center lg:pt-32">
       <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-neutral-900 sm:text-7xl">
         Technology made{" "}
         <span className="text-primary-600 relative whitespace-nowrap">

@@ -57,7 +57,7 @@ export function PrimaryFeatures() {
 
   return (
     <section
-      id="company"
+      id="solutions"
       aria-label="Features for running your site"
       className="bg-secondary-600 relative overflow-hidden pb-28 pt-20 sm:py-32"
     >
