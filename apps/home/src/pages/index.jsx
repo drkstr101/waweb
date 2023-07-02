@@ -1,12 +1,9 @@
 import Head from "next/head";
 
 import { CallToAction } from "@home/components/CallToAction";
-import { Faqs } from "@home/components/Faqs";
 import { Footer } from "@home/components/Footer";
 import { Header } from "@home/components/Header";
 import { Hero } from "@home/components/Hero";
-import { Highlights } from "@home/components/Highlights";
-import { Pricing } from "@home/components/Pricing";
 import { PrimaryFeatures } from "@home/components/PrimaryFeatures";
 import { SecondaryFeatures } from "@home/components/SecondaryFeatures";
 import { Testimonials } from "@home/components/Testimonials";
@@ -24,13 +21,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Highlights />
-        <PrimaryFeatures />
+        {/* <Highlights /> */}
         <SecondaryFeatures />
-        <CallToAction />
+        <PrimaryFeatures />
         <Testimonials />
-        <Pricing />
-        <Faqs />
+        <CallToAction />
+
+        {/* <Pricing /> */}
+        {/* <Faqs /> */}
       </main>
       <Footer />
     </>

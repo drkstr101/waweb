@@ -48,7 +48,7 @@ export function Highlights({
       {...props}
     >
       <Container variant="fixed">
-        <div className="relative isolate overflow-hidden bg-neutral-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
+        <div className="relative isolate overflow-hidden bg-neutral-900 px-6 py-10 sm:rounded-3xl sm:px-10 sm:py-12 lg:py-24 xl:p-24">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
             <div className="lg:row-start-2 lg:max-w-md">
               <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
