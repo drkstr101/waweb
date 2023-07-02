@@ -70,7 +70,7 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-neutral-900 shadow-xl ring-1 ring-neutral-900/5"
           >
-            <MobileNavLink href="#about">Company</MobileNavLink>
+            <MobileNavLink href="#company">Company</MobileNavLink>
             <MobileNavLink href="#testimonials">Blog</MobileNavLink>
             <MobileNavLink href="#pricing">Solutions</MobileNavLink>
             <hr className="m-2 border-neutral-300/40" />
@@ -92,7 +92,7 @@ export function Header() {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#about">Company</NavLink>
+              <NavLink href="#company">Company</NavLink>
               <NavLink href="#testimonials">Blog</NavLink>
               <NavLink href="#pricing">Solutions</NavLink>
             </div>
