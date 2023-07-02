@@ -1,19 +1,19 @@
 import Image from "next/image";
 
 import { Button } from "@home/components/Button";
-import { Container } from "@home/components/Container";
 import logoLaravel from "@home/images/logos/laravel.svg";
 import logoMirage from "@home/images/logos/mirage.svg";
 import logoStatamic from "@home/images/logos/statamic.svg";
 import logoStaticKit from "@home/images/logos/statickit.svg";
 import logoTransistor from "@home/images/logos/transistor.svg";
 import logoTuple from "@home/images/logos/tuple.svg";
+import { Container } from "@watheia/waweb.base-ui";
 
 export function Hero() {
   return (
     <Container className="pb-16 pt-20 text-center lg:pt-32">
       <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-neutral-900 sm:text-7xl">
-        We make technology{" "}
+        Technology made{" "}
         <span className="text-primary-600 relative whitespace-nowrap">
           <svg
             aria-hidden="true"
@@ -31,15 +31,15 @@ export function Hero() {
         and hope you don’t get audited.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
-        <Button href="/register">Get 6 months free</Button>
+        <Button href="/register">Get in touch</Button>
         <Button href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" variant="outline">
+          <span className="mr-3">Learn more</span>
           <svg
             aria-hidden="true"
             className="fill-primary-600 h-3 w-3 flex-none group-active:fill-current"
           >
             <path d="m9.997 6.91-7.583 3.447A1 1 0 0 1 1 9.447V2.553a1 1 0 0 1 1.414-.91L9.997 5.09c.782.355.782 1.465 0 1.82Z" />
           </svg>
-          <span className="ml-3">Watch video</span>
         </Button>
       </div>
       <div className="mt-36 lg:mt-44">

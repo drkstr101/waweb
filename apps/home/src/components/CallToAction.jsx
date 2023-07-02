@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 import { Button } from "@home/components/Button";
-import { Container } from "@home/components/Container";
 import backgroundImage from "@home/images/background-call-to-action.jpg";
+import { Container } from "@watheia/waweb.base-ui";
 
 export function CallToAction() {
   return (

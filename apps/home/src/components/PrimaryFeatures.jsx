@@ -3,12 +3,12 @@ import clsx from "clsx";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-import { Container } from "@home/components/Container";
 import backgroundImage from "@home/images/background-features.jpg";
 import screenshotExpenses from "@home/images/screenshots/expenses.png";
 import screenshotPayroll from "@home/images/screenshots/payroll.png";
 import screenshotReporting from "@home/images/screenshots/reporting.png";
 import screenshotVatReturns from "@home/images/screenshots/vat-returns.png";
+import { Container } from "@watheia/waweb.base-ui";
 
 const features = [
   {

@@ -1,10 +1,15 @@
-/* eslint-disable-next-line */
-export interface ContainerProps {}
+import { ContainerVariant, container as styles } from "@watheia/waweb.theme.styles";
+import clsx from "clsx";
+import { HtmlHTMLAttributes } from "react";
 
-export function Container(props: ContainerProps) {
+export interface ContainerProps extends HtmlHTMLAttributes<HTMLDivElement> {
+  variant?: ContainerVariant;
+}
+
+export function Container({ variant = "wide", className, children, ...props }: ContainerProps) {
   return (
-    <div>
-      <h1>Welcome to Container!</h1>
+    <div className={clsx(styles[variant], className)} {...props}>
+      {children}
     </div>
   );
 }

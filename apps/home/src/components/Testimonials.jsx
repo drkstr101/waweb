@@ -1,11 +1,11 @@
 import Image from "next/image";
 
-import { Container } from "@home/components/Container";
 import avatarImage1 from "@home/images/avatars/avatar-1.png";
 import avatarImage2 from "@home/images/avatars/avatar-2.png";
 import avatarImage3 from "@home/images/avatars/avatar-3.png";
 import avatarImage4 from "@home/images/avatars/avatar-4.png";
 import avatarImage5 from "@home/images/avatars/avatar-5.png";
+import { Container } from "@watheia/waweb.base-ui";
 
 const testimonials = [
   [

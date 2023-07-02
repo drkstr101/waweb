@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { Container } from "@home/components/Container";
 import backgroundImage from "@home/images/background-faqs.jpg";
+import { Container } from "@watheia/waweb.base-ui";
 
 const faqs = [
   [
