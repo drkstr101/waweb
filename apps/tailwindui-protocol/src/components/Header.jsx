@@ -1,15 +1,15 @@
-import { forwardRef } from "react";
-import Link from "next/link";
 import clsx from "clsx";
 import { motion, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
+import { forwardRef } from "react";
 
 import { Button } from "@protocol/components/Button";
 import { Logo } from "@protocol/components/Logo";
 import {
   MobileNavigation,
   useIsInsideMobileNavigation,
+  useMobileNavigationStore,
 } from "@protocol/components/MobileNavigation";
-import { useMobileNavigationStore } from "@protocol/components/MobileNavigation";
 import { ModeToggle } from "@protocol/components/ModeToggle";
 import { MobileSearch, Search } from "@protocol/components/Search";
 
@@ -67,7 +67,7 @@ export const Header = forwardRef(function Header({ className }, ref) {
       </div>
       <div className="flex items-center gap-5">
         <nav className="hidden md:block">
-          <ul role="list" className="flex items-center gap-8">
+          <ul className="flex items-center gap-8">
             <TopLevelNavItem href="/">API</TopLevelNavItem>
             <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
             <TopLevelNavItem href="#">Support</TopLevelNavItem>

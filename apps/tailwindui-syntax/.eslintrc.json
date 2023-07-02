@@ -1,6 +1,7 @@
 {
   "extends": [
     "plugin:@nx/react-typescript",
+    "plugin:jsx-a11y/strict",
     "next",
     "next/core-web-vitals",
     "../../.eslintrc.json"

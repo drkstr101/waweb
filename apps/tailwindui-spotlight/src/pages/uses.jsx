@@ -7,9 +7,7 @@ import { SimpleLayout } from "@spotlight/components/SimpleLayout";
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
-        {children}
-      </ul>
+      <ul className="space-y-16">{children}</ul>
     </Section>
   );
 }
