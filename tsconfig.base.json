@@ -19,8 +19,8 @@
       "@protocol/*": ["apps/tailwindui-protocol/src/*"],
       "@spotlight/*": ["apps/tailwindui-spotlight/src/*"],
       "@syntax/*": ["apps/tailwindui-syntax/src/*"],
-      "@watheia/waweb.theme.styles": ["libs/theme/styles/src/index.ts"],
-      "@watheia/waweb.base-ui": ["libs/base-ui/src/index.ts"]
+      "@watheia/waweb.base-ui": ["libs/base-ui/src/index.ts"],
+      "@watheia/waweb.theme.styles": ["libs/theme/styles/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
