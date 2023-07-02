@@ -3,10 +3,9 @@ import clsx from "clsx";
 import Link from "next/link";
 import { Fragment } from "react";
 
-import { Button } from "@home/components/Button";
 import { Logo } from "@home/components/Logo";
 import { NavLink } from "@home/components/NavLink";
-import { Container } from "@watheia/waweb.base-ui";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
 function MobileNavLink({ href, children }) {
   return (

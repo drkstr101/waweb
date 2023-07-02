@@ -1,13 +1,12 @@
 import Image from "next/image";
 
-import { Button } from "@home/components/Button";
 import logoLaravel from "@home/images/logos/laravel.svg";
 import logoMirage from "@home/images/logos/mirage.svg";
 import logoStatamic from "@home/images/logos/statamic.svg";
 import logoStaticKit from "@home/images/logos/statickit.svg";
 import logoTransistor from "@home/images/logos/transistor.svg";
 import logoTuple from "@home/images/logos/tuple.svg";
-import { Container } from "@watheia/waweb.base-ui";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
 export function Hero() {
   return (

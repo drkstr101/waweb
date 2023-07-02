@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
-import { Button } from "@home/components/Button";
-import { Container } from "@watheia/waweb.base-ui";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
 function SwirlyDoodle({ className }) {
   return (
