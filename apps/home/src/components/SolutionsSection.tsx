@@ -1,6 +1,6 @@
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 import { useEffect, useState } from "react";
 
 import backgroundImage from "@home/images/background-features.jpg";
@@ -8,7 +8,7 @@ import screenshotExpenses from "@home/images/screenshots/expenses.png";
 import screenshotPayroll from "@home/images/screenshots/payroll.png";
 import screenshotReporting from "@home/images/screenshots/reporting.png";
 import screenshotVatReturns from "@home/images/screenshots/vat-returns.png";
-import { Container } from "@watheia/waweb.base-ui";
+import { Container, Heading } from "@watheia/waweb.base-ui";
 
 const features = [
   {
@@ -37,13 +37,13 @@ const features = [
   },
 ];
 
-export function PrimaryFeatures() {
-  let [tabOrientation, setTabOrientation] = useState("horizontal");
+export function SolutionsSection() {
+  const [tabOrientation, setTabOrientation] = useState("horizontal");
 
   useEffect(() => {
-    let lgMediaQuery = window.matchMedia("(min-width: 1024px)");
+    const lgMediaQuery = window.matchMedia("(min-width: 1024px)");
 
-    function onMediaQueryChange({ matches }) {
+    function onMediaQueryChange({ matches }: { matches: any }) {
       setTabOrientation(matches ? "vertical" : "horizontal");
     }
 
@@ -71,9 +71,12 @@ export function PrimaryFeatures() {
       />
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+          <Heading
+            level={2}
+            className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl"
+          >
             Everything you need to run your site.
-          </h2>
+          </Heading>
           <p className="text-secondary-100 mt-6 text-lg tracking-tight">
             Well everything you need if you aren’t that picky about minor details like tax
             compliance.

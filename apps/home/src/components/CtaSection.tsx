@@ -1,9 +1,9 @@
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 
 import backgroundImage from "@home/images/background-call-to-action.jpg";
 import { Button, Container } from "@watheia/waweb.base-ui";
 
-export function CallToAction() {
+export function CtaSection() {
   return (
     <section id="get-started-today" className="bg-secondary-600 relative overflow-hidden py-32">
       <Image

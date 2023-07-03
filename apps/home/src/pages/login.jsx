@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 
 import { AuthLayout } from "@home/components/AuthLayout";
 import { TextField } from "@home/components/Fields";

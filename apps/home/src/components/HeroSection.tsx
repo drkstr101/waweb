@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 
 import logoLaravel from "@home/images/logos/laravel.svg";
 import logoMirage from "@home/images/logos/mirage.svg";
@@ -6,12 +6,12 @@ import logoStatamic from "@home/images/logos/statamic.svg";
 import logoStaticKit from "@home/images/logos/statickit.svg";
 import logoTransistor from "@home/images/logos/transistor.svg";
 import logoTuple from "@home/images/logos/tuple.svg";
-import { Button, Container } from "@watheia/waweb.base-ui";
+import { Button, Container, Heading } from "@watheia/waweb.base-ui";
 
-export function Hero() {
+export function HeroSection() {
   return (
-    <Container className="pb-16 min-h-screen pt-20 text-center lg:pt-32">
-      <h1 className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-neutral-900 sm:text-7xl">
+    <Container className="min-h-screen pb-16 pt-20 text-center lg:pt-32">
+      <Heading className="font-display mx-auto max-w-4xl text-5xl font-medium tracking-tight text-neutral-900 sm:text-7xl">
         Technology made{" "}
         <span className="text-primary-600 relative whitespace-nowrap">
           <svg
@@ -24,7 +24,7 @@ export function Hero() {
           </svg>
           <span className="relative">easy</span>
         </span>
-      </h1>
+      </Heading>
       <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-neutral-700">
         Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off,
         and hope you don’t get audited.

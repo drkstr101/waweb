@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import { CallToAction } from "@home/components/CallToAction";
+import { CtaSection } from "@home/components/CtaSection";
 import { Footer } from "@home/components/Footer";
 import { Header } from "@home/components/Header";
-import { Hero } from "@home/components/Hero";
-import { PrimaryFeatures } from "@home/components/PrimaryFeatures";
-import { SecondaryFeatures } from "@home/components/SecondaryFeatures";
-import { Testimonials } from "@home/components/Testimonials";
+import { HeroSection } from "@home/components/HeroSection";
+import { RecentPostsSection } from "@home/components/RecentPostsSection";
+import { ServicesSection } from "@home/components/ServicesSection";
+import { SolutionsSection } from "@home/components/SolutionsSection";
 
 export default function Home() {
   return (
@@ -20,15 +20,11 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <Hero />
-        {/* <Highlights /> */}
-        <SecondaryFeatures />
-        <PrimaryFeatures />
-        <Testimonials />
-        <CallToAction />
-
-        {/* <Pricing /> */}
-        {/* <Faqs /> */}
+        <HeroSection />
+        <ServicesSection />
+        <SolutionsSection />
+        <RecentPostsSection />
+        <CtaSection />
       </main>
       <Footer />
     </>

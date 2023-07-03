@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 
 import backgroundImage from "@home/images/background-faqs.jpg";
-import { Container } from "@watheia/waweb.base-ui";
+import { Container, Heading } from "@watheia/waweb.base-ui";
 
 const faqs = [
   [
@@ -71,12 +71,13 @@ export function Faqs() {
       />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
+          <Heading
+            level={2}
             id="faq-title"
             className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl"
           >
             Frequently asked questions
-          </h2>
+          </Heading>
           <p className="mt-4 text-lg tracking-tight text-neutral-700">
             If you can’t find what you’re looking for, email our support team and if you’re
             lucky someone will get back to you.

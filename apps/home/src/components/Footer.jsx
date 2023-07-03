@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 
 import { Container } from "@watheia/waweb.base-ui";
 

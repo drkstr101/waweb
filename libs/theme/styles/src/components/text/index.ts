@@ -1,9 +1,6 @@
 import styles from "./text.module.css";
 
-export type TextVariant =
-  | "lead"
-  | "detail"
-  | "body";
+export type TextVariant = "lead" | "detail" | "body";
 
 export interface TextTheme {
   readonly lead: string;

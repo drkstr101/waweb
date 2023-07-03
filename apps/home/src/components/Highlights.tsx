@@ -2,7 +2,7 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from "@heroicons/react/2
 import appScreenshot from "@home/images/dark-app-screenshot.png";
 import { Container } from "@watheia/waweb.base-ui";
 import clsx from "clsx";
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 import { ForwardRefExoticComponent, HtmlHTMLAttributes, RefAttributes, SVGProps } from "react";
 
 const defaultFeatures = [

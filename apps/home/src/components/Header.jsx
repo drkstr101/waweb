@@ -1,6 +1,6 @@
 import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 import { Fragment } from "react";
 
 import { Logo } from "@home/components/Logo";

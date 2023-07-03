@@ -1,11 +1,16 @@
-/* eslint-disable-next-line */
-export interface HeadingProps {}
+import { ElementType, HtmlHTMLAttributes } from "react";
 
-export function Heading(props: HeadingProps) {
+/* eslint-disable-next-line */
+export interface HeadingProps extends HtmlHTMLAttributes<HTMLElement> {
+  level?: number;
+}
+
+export function Heading({ level = 1, children, className, ...props }: HeadingProps) {
+  const Element = `h${level}` as ElementType;
   return (
-    <div>
-      <h1>Welcome to Heading!</h1>
-    </div>
+    <Element className={className} {...props}>
+      {children}
+    </Element>
   );
 }
 
