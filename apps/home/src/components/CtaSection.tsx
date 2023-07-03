@@ -1,10 +1,9 @@
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 
-import { Button } from "@home/components/Button";
-import { Container } from "@home/components/Container";
 import backgroundImage from "@home/images/background-call-to-action.jpg";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
-export function CallToAction() {
+export function CtaSection() {
   return (
     <section id="get-started-today" className="bg-secondary-600 relative overflow-hidden py-32">
       <Image
@@ -18,14 +17,14 @@ export function CallToAction() {
       <Container className="relative">
         <div className="mx-auto max-w-lg text-center">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
-            Get started today
+            Start your project today
           </h2>
           <p className="mt-4 text-lg tracking-tight text-white">
             It’s time to take control of your site. Buy our software so you can feel like you’re
             doing something productive.
           </p>
-          <Button href="/register" color="white" className="mt-10">
-            Get 6 months free
+          <Button href="/contact" color="white" className="mt-10">
+            Get in touch
           </Button>
         </div>
       </Container>

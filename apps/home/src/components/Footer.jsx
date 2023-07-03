@@ -1,23 +1,11 @@
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 
-import { Container } from "@home/components/Container";
-import { Logo } from "@home/components/Logo";
-import { NavLink } from "@home/components/NavLink";
+import { Container } from "@watheia/waweb.base-ui";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-50">
+    <footer className="bg-neutral-100">
       <Container>
-        <div className="py-16">
-          <Logo className="mx-auto h-10 w-auto" />
-          <nav className="mt-10 text-sm" aria-label="quick links">
-            <div className="-my-1 flex justify-center gap-x-6">
-              <NavLink href="#about">About</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
-            </div>
-          </nav>
-        </div>
         <div className="flex flex-col items-center border-t border-neutral-400/10 py-10 sm:flex-row-reverse sm:justify-between">
           <div className="flex gap-x-6">
             <Link href="https://twitter.com" className="group" aria-label="TaxPal on Twitter">
@@ -38,7 +26,7 @@ export function Footer() {
             </Link>
           </div>
           <p className="mt-6 text-sm text-neutral-500 sm:mt-0">
-            Copyright &copy; {new Date().getFullYear()} Watheia Labs, LLC. All rights reserved.
+            &copy; {new Date().getFullYear()} Watheia Labs, LLC. All rights reserved.
           </p>
         </div>
       </Container>

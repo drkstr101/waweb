@@ -1,0 +1,23 @@
+.title {
+  @apply font-display text-5xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-7xl;
+}
+
+.subtitle {
+  @apply font-display text-4xl text-neutral-900 dark:text-neutral-100 sm:text-5xl;
+}
+
+.heading1 {
+  @apply font-display text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-4xl;
+}
+
+.heading2 {
+  @apply font-display text-2xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100 sm:text-3xl;
+}
+
+.heading3 {
+  @apply text-base font-semibold leading-7 text-neutral-900 dark:text-neutral-100;
+}
+
+.label {
+  @apply font-display text-primary-600 dark:text-primary-400 text-base font-semibold leading-7;
+}

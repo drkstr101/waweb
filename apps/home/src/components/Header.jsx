@@ -1,12 +1,11 @@
 import { Popover, Transition } from "@headlessui/react";
 import clsx from "clsx";
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 import { Fragment } from "react";
 
-import { Button } from "@home/components/Button";
-import { Container } from "@home/components/Container";
 import { Logo } from "@home/components/Logo";
 import { NavLink } from "@home/components/NavLink";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
 function MobileNavLink({ href, children }) {
   return (
@@ -71,9 +70,9 @@ function MobileNavigation() {
             as="div"
             className="absolute inset-x-0 top-full mt-4 flex origin-top flex-col rounded-2xl bg-white p-4 text-lg tracking-tight text-neutral-900 shadow-xl ring-1 ring-neutral-900/5"
           >
-            <MobileNavLink href="#about">About</MobileNavLink>
-            <MobileNavLink href="#testimonials">Testimonials</MobileNavLink>
-            <MobileNavLink href="#pricing">Pricing</MobileNavLink>
+            <MobileNavLink href="#company">Company</MobileNavLink>
+            <MobileNavLink href="#solutions">Solutions</MobileNavLink>
+            <MobileNavLink href="#blog">Blog</MobileNavLink>
             <hr className="m-2 border-neutral-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink>
           </Popover.Panel>
@@ -93,19 +92,17 @@ export function Header() {
               <Logo className="h-10 w-auto" />
             </Link>
             <div className="hidden md:flex md:gap-x-6">
-              <NavLink href="#about">About</NavLink>
-              <NavLink href="#testimonials">Testimonials</NavLink>
-              <NavLink href="#pricing">Pricing</NavLink>
+              <NavLink href="#company">Company</NavLink>
+              <NavLink href="#solutions">Solutions</NavLink>
+              <NavLink href="#blog">Blog</NavLink>
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">
             <div className="hidden md:block">
               <NavLink href="/login">Sign in</NavLink>
             </div>
-            <Button href="/register" color="primary">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
+            <Button href="/contact" color="primary">
+              <span>Contact us</span>
             </Button>
             <div className="-mr-1 md:hidden">
               <MobileNavigation />

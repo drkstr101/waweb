@@ -262,7 +262,7 @@ export function Layout({ children, title, tableOfContents }) {
                 >
                   On this page
                 </h2>
-                <ol role="list" className="mt-4 space-y-3 text-sm">
+                <ol className="mt-4 space-y-3 text-sm">
                   {tableOfContents.map((section) => (
                     <li key={section.id}>
                       <h3>
@@ -278,10 +278,7 @@ export function Layout({ children, title, tableOfContents }) {
                         </Link>
                       </h3>
                       {section.children.length > 0 && (
-                        <ol
-                          role="list"
-                          className="mt-2 space-y-3 pl-5 text-neutral-500 dark:text-neutral-400"
-                        >
+                        <ol className="mt-2 space-y-3 pl-5 text-neutral-500 dark:text-neutral-400">
                           {section.children.map((subSection) => (
                             <li key={subSection.id}>
                               <Link

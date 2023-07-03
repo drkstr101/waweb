@@ -1,7 +1,6 @@
 import clsx from "clsx";
 
-import { Button } from "@home/components/Button";
-import { Container } from "@home/components/Container";
+import { Button, Container } from "@watheia/waweb.base-ui";
 
 function SwirlyDoodle({ className }) {
   return (
@@ -59,7 +58,6 @@ function Plan({ name, price, description, href, features, featured = false }) {
         {price}
       </p>
       <ul
-        role="list"
         className={clsx(
           "order-last mt-10 flex flex-col gap-y-3 text-sm",
           featured ? "text-white" : "text-neutral-200"

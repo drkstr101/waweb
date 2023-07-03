@@ -1,12 +1,12 @@
 import { Tab } from "@headlessui/react";
 import clsx from "clsx";
-import Image from "next/image";
-import { useId } from "react";
+import { Image } from "@watheia/waweb.base-ui";
+import { HtmlHTMLAttributes, useId } from "react";
 
-import { Container } from "@home/components/Container";
 import screenshotContacts from "@home/images/screenshots/contacts.png";
 import screenshotInventory from "@home/images/screenshots/inventory.png";
 import screenshotProfitLoss from "@home/images/screenshots/profit-loss.png";
+import { Container, Heading } from "@watheia/waweb.base-ui";
 
 const features = [
   {
@@ -16,7 +16,7 @@ const features = [
       "We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.",
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
-      let id = useId();
+      const id = useId();
       return (
         <>
           <defs>
@@ -94,7 +94,12 @@ const features = [
   },
 ];
 
-function Feature({ feature, isActive, className, ...props }) {
+function Feature({
+  feature,
+  isActive,
+  className,
+  ...props
+}: HtmlHTMLAttributes<HTMLDivElement> & { feature: any; isActive: boolean }) {
   return (
     <div className={clsx(className, !isActive && "opacity-75 hover:opacity-100")} {...props}>
       <div className={clsx("w-9 rounded-lg", isActive ? "bg-primary-600" : "bg-neutral-500")}>
@@ -184,18 +189,21 @@ function FeaturesDesktop() {
   );
 }
 
-export function SecondaryFeatures() {
+export function ServicesSection() {
   return (
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="border-t border-neutral-200 bg-gradient-to-b from-neutral-100 to-neutral-200 pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl">
+          <Heading
+            level={2}
+            className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl"
+          >
             Simplify everyday business tasks.
-          </h2>
+          </Heading>
           <p className="mt-4 text-lg tracking-tight text-neutral-700">
             Because you’d probably be a little confused if we suggested you complicate your
             everyday business tasks instead.

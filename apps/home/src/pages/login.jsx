@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Link from "next/link";
+import { Link } from "@watheia/waweb.base-ui";
 
 import { AuthLayout } from "@home/components/AuthLayout";
-import { Button } from "@home/components/Button";
 import { TextField } from "@home/components/Fields";
 import { Logo } from "@home/components/Logo";
+import { Button } from "@watheia/waweb.base-ui";
 
 export default function Login() {
   return (

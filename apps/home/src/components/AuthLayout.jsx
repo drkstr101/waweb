@@ -1,5 +1,4 @@
-import Image from "next/image";
-
+import { Image } from "@watheia/waweb.base-ui";
 import backgroundImage from "@home/images/background-auth.jpg";
 
 export function AuthLayout({ children }) {

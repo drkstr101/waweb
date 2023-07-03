@@ -131,7 +131,7 @@ function NavigationGroup({ group, className }) {
         <AnimatePresence initial={false}>
           {isActiveGroup && <ActivePageMarker group={group} pathname={router.pathname} />}
         </AnimatePresence>
-        <ul role="list" className="border-l border-transparent">
+        <ul className="border-l border-transparent">
           {group.links.map((link) => (
             <motion.li key={link.href} layout="position" className="relative">
               <NavLink href={link.href} active={link.href === router.pathname}>
@@ -140,7 +140,6 @@ function NavigationGroup({ group, className }) {
               <AnimatePresence mode="popLayout" initial={false}>
                 {link.href === router.pathname && sections.length > 0 && (
                   <motion.ul
-                    role="list"
                     initial={{ opacity: 0 }}
                     animate={{
                       opacity: 1,
@@ -201,7 +200,7 @@ export const navigation = [
 export function Navigation(props) {
   return (
     <nav {...props}>
-      <ul role="list">
+      <ul>
         <TopLevelNavItem href="/">API</TopLevelNavItem>
         <TopLevelNavItem href="#">Documentation</TopLevelNavItem>
         <TopLevelNavItem href="#">Support</TopLevelNavItem>

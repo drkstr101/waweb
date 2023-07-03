@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { Footer } from "@spotlight/components/Footer";
 import { Header } from "@spotlight/components/Header";
 
-import "@watheia/theme.styles";
+import "@watheia/waweb.theme.styles";
 import "focus-visible";
 
 function usePrevious(value) {

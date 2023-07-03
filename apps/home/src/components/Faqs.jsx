@@ -1,7 +1,7 @@
-import Image from "next/image";
+import { Image } from "@watheia/waweb.base-ui";
 
-import { Container } from "@home/components/Container";
 import backgroundImage from "@home/images/background-faqs.jpg";
+import { Container, Heading } from "@watheia/waweb.base-ui";
 
 const faqs = [
   [
@@ -71,24 +71,22 @@ export function Faqs() {
       />
       <Container className="relative">
         <div className="mx-auto max-w-2xl lg:mx-0">
-          <h2
+          <Heading
+            level={2}
             id="faq-title"
             className="font-display text-3xl tracking-tight text-neutral-900 sm:text-4xl"
           >
             Frequently asked questions
-          </h2>
+          </Heading>
           <p className="mt-4 text-lg tracking-tight text-neutral-700">
             If you can’t find what you’re looking for, email our support team and if you’re
             lucky someone will get back to you.
           </p>
         </div>
-        <ul
-          role="list"
-          className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3"
-        >
+        <ul className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:max-w-none lg:grid-cols-3">
           {faqs.map((column, columnIndex) => (
             <li key={columnIndex}>
-              <ul role="list" className="flex flex-col gap-y-8">
+              <ul className="flex flex-col gap-y-8">
                 {column.map((faq, faqIndex) => (
                   <li key={faqIndex}>
                     <h3 className="font-display text-lg leading-7 text-neutral-900">
